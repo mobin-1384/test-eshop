@@ -40,11 +40,13 @@ a {
     font-size: .82rem;
 }
 
-#header div p span {
-    padding-right: .2rem;
+#title {
+    padding-right: .4rem;
     color: #265073;
     font-family: "Lalehzar";
     font-size: 1.2rem;
+    font-weight: 100;
+    margin: 0;
 }
 
 /* Section */
@@ -89,6 +91,7 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 1rem;
 }
 
 .category-item {
@@ -287,6 +290,109 @@ a {
     padding: 0 0 0 1rem;
 }
 
+/* Bests */
+
+#best-selling-parent {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 1rem .5rem;
+    width: 100%;
+}
+
+#best-selling {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.best-selling-item {
+    width: calc(50% - .5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    scale: .9;
+}
+
+.best-selling_img {
+    padding: .5rem;
+}
+
+.best-selling_img img {
+    width: 100%;
+    height: 7rem;
+    object-fit: contain;
+}
+
+.best-selling_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-selling_info>p {
+    font-size: .9rem;
+    padding: 0 1rem;
+    line-height: 25px;
+    text-align: center;
+    
+}
+
+.best-selling_price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    padding-top: .5rem;
+    color: #3f4064;
+}
+
+.best-selling_price span {
+    font-size: .8rem;
+}
+
+.best-selling_price p {
+    font-size: .94rem;
+}
+
+.best-selling-item_offer {
+    text-decoration: line-through;
+    color: #c0c2c5;
+    margin-left: .5rem;
+    font-size: .8rem !important;
+}
+
+.best-selling_bottom {
+    width: 100%;
+    border-top: 1px solid #e9e9e9;
+    display: flex;
+    flex-direction: row;
+    padding: .5rem;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.best-selling-item a:nth-child(2) {
+    padding: 0.5rem 0.5rem;
+    background-color: #2ECC71;
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: .6rem;
+}
+
+.best-selling-item a:nth-child(2) i {
+    padding-left: .5rem;
+
+}
 
 /* Main Article */
 
@@ -346,6 +452,7 @@ a {
     align-items: center;
     color: #333333;
     padding: .9rem 3rem;
+    color: #3f4064;
 }
 
 .main_article-item:hover .main_article-item-info {
