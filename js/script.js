@@ -28,6 +28,21 @@ var splide = new Splide('.splide', {
 
 splide.mount();
 
+// Best 
+
+var bestSelling = $('.best')
+
+bestSelling.owlCarousel({
+    rtl: true,
+    items: 2,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    dots: true,
+    nav: false,
+})
+
 
 // Main Article Slider
 
