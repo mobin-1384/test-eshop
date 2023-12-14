@@ -36,13 +36,41 @@ bestSelling.owlCarousel({
     rtl: true,
     items: 2,
     loop: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     dots: true,
     nav: false,
 })
 
+function beRed(element) {
+    // var heart = document.getElementById("addToHeart");
+    if (element.classList != "heartActive") {
+        element.innerHTML = '<i class="fa-solid fa-heart"></i>';
+        element.classList.add("heartActive");
+    } else {
+        element.innerHTML = '<i class="fa-regular fa-heart"></i>';
+        element.classList.remove("heartActive");
+    }
+}
+
+function showDes(element) {
+    var bestItem = element.parentElement.parentElement;
+    var bestTop = bestItem.children[0];
+    if (element.classList != "activeBar") {
+        element.classList.add("activeBar");
+        element.innerHTML = '<i class="fa-solid fa-bars-staggered"></i>';
+        bestTop.children[0].style.display = "none";
+        bestTop.children[1].style.display = "none";
+        bestTop.children[2].style.display = "block";
+    } else {
+        element.classList.remove("activeBar");
+        element.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        bestTop.children[0].style.display = "flex";
+        bestTop.children[1].style.display = "flex";
+        bestTop.children[2].style.display = "none";
+    }
+}
 
 // Main Article Slider
 
