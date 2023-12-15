@@ -36,7 +36,7 @@ bestSelling.owlCarousel({
     rtl: true,
     items: 2,
     loop: true,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     dots: true,
@@ -63,6 +63,7 @@ function showDes(element) {
         bestTop.children[0].style.display = "none";
         bestTop.children[1].style.display = "none";
         bestTop.children[2].style.display = "block";
+        setTimeout(showDes, 20000, element);
     } else {
         element.classList.remove("activeBar");
         element.innerHTML = '<i class="fa-solid fa-bars"></i>';
@@ -100,3 +101,6 @@ mainArticleSlider.owlCarousel({
         }
     },
 })
+
+
+

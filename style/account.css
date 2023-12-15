@@ -1,0 +1,279 @@
+/*  ===============ACCOUNT============== */
+
+.areaAnime {
+    background-color: #0093E9;
+    background-image: linear-gradient(to top, #0093E9 0%, #80D0C7 100%);
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+.circlesAnime {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circlesAnime li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animateAnime 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circlesAnime li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circlesAnime li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circlesAnime li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circlesAnime li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circlesAnime li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circlesAnime li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circlesAnime li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circlesAnime li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circlesAnime li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circlesAnime li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animateAnime {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+/* Singup */
+
+body {
+    padding-bottom: 0;
+}
+
+.formParent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login {
+    width: 85%;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid rgba(0 ,0 ,0 , .1);
+    padding: 20px;
+    background-color: #fff;
+    font-size: .9em;
+    color: rgba(0 ,0 ,0 ,.9);
+    z-index: 5;
+}
+
+.loginTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginTop h3 {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: rgba(0 ,0 ,0 ,.9);
+}
+
+.loginTop h3 span {
+    padding-right: 0.3rem;
+    color: #265073;
+    font-family: "Lalehzar";
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin: 0;
+}
+
+.loginTop i {
+    color: red;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.loginTop a:hover i {
+    color: rgb(255, 132, 132);
+}
+
+.login > hr {
+    width: 100%;
+    border: 1px solid rgba(0 ,0 ,0 , .1);
+    margin: 15px 0;
+}
+
+.loginSection label {
+    display: flex;
+}
+
+.loginSection label:hover {
+    cursor: pointer;
+}
+
+.loginSection i {
+    margin-left: 10px;
+    color: #182C61;
+    font-size: 1rem;
+}
+
+.loginSection input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgba(0 ,0 ,0 , .1);
+    font-size: .8em;
+    margin: 10px 0 15px;
+    padding: 12px;
+    border-radius: 3px;
+    height: 38px;
+}
+
+.loginSection input:hover {
+    background-color: rgb(247, 247, 247);
+    box-shadow: inset 2px 2px #50c8ff, inset -2px -2px #0095da;
+}
+
+.loginSection input:focus {
+    background-color: rgba(255 , 255 , 255 , 1);
+    box-shadow: inset 2px 2px #50c8ff, inset -2px -2px #0095da;
+}
+
+.loginBottom-showPass {
+    display: flex;
+    flex-direction: row;
+}
+
+.loginBottom-showPass input:hover {
+    cursor: pointer;
+}
+
+.loginBottom-showPass label {
+    color: rgba(0 ,0 ,0 ,.7);
+    font-size: .9em;
+    margin-right: .6rem;
+    cursor: pointer;
+}
+
+.loginBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginBottom button {
+    border: none;
+    outline: none;
+    background-color: #38ca62;
+    color: white;
+    border-radius: 3px;
+    padding: .6rem 1.3rem;
+}
+
+.loginBottom button:hover {
+    cursor: pointer;
+    background-color: #2eb353;
+}
+
+.loginBottom a {
+    color: rgba(0 ,0 ,0 ,.8);
+    border-bottom: 1px solid rgba(0 ,0 ,0 ,.5);
+    font-size: .8em;
+    line-height: 20px;
+}
+
+.loginBottom a:hover {
+    border: none;
+    cursor: pointer;
+    color: rgba(0 ,0 ,0 ,.7);
+}
