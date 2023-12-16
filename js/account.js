@@ -38,3 +38,10 @@ if (reCodeBtn != null) {
         Alert(5000);
     });
 }
+
+var doneCode = document.querySelector("#doneCode");
+if (doneCode != null) {
+    doneCode.addEventListener("click", function(){
+        window.open("./changePass.html", "_parent");
+    });
+}
