@@ -1,5 +1,71 @@
 /*  ===============ACCOUNT============== */
 
+body {
+    color: rgba(0 ,0 ,0 ,.9);
+}
+
+#accHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.accHeader-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accHeader-top i {
+    font-size: 1.3rem;
+    color: rgba(0 ,0 ,0 ,.8);
+}
+
+.accHeader-top img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(0 ,0 ,0 , .1);
+    border-radius: 50px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.accHeader-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid rgba(0 ,0 ,0 ,.1);
+}
+
+.accHeader-bottom div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accHeader-bottom div h4 {
+    font-weight: 100;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.accHeader-bottom div p {
+    font-size: .9rem;
+    color: rgba(0 ,0 ,0 ,.7);
+    letter-spacing: 1px;
+}
+
+.accHeader-bottom i {
+    font-size: 1.3rem;
+    color: #19bfd3;
+}
+
+
+/*  ===============LOG / SING============== */
+
 .areaAnime {
     background-color: #0093E9;
     background-image: linear-gradient(to top, #0093E9 0%, #80D0C7 100%);
