@@ -35,21 +35,6 @@ if (reCodeBtn != null) {
         doneCodeBtn.style.display="block";
         reCodeLable.style.display="flex";
         reCodeInp.style.display="block";
-        progressBar();
+        Alert(5000);
     });
-}
-
-function progressBar() {
-    var alert = document.querySelector("#alert");
-    var statusBar = document.querySelector("#status--bar")
-    alert.style.display = "block";
-    var bar = 100;
-    var progress = setInterval(function(){
-        statusBar.style.width= bar+"%";
-        bar -= (100 / (5000 / 10));
-    },10);
-    setTimeout(function(){
-        alert.style.display = "none";
-        clearInterval(progress);
-    },5000);
 }
