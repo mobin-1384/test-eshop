@@ -41,6 +41,23 @@ bestSelling.owlCarousel({
     autoplayHoverPause: true,
     dots: true,
     nav: false,
+    responsive : {
+        0 : {
+            items : 2,
+        } ,
+        800 : {
+            items : 3,
+        } ,
+        1024 : {
+            items : 4,
+        } ,
+        1280 : {
+            items : 5,
+        } ,
+        1500 : {
+            items : 6,
+        }
+    },
 })
 
 function beRed(element) {
@@ -90,13 +107,13 @@ mainArticleSlider.owlCarousel({
         0 : {
             items : 1,
         } ,
-        600 : {
+        700 : {
             items : 2,
         } ,
-        1000 : {
+        1100 : {
             items : 3,
         } ,
-        1200 : {
+        1800 : {
             items : 5,
         }
     },

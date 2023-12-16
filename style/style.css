@@ -579,3 +579,61 @@ hr {
 #footer-button div a div {
     font-size: 1.1rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:800px) {
+    /* body {
+        width: 800px;
+    }
+
+    #footer {
+        width: 800px;
+    } */
+
+    #categories {
+        width: 720px;
+        /* flex-wrap: nowrap; */
+    }
+
+    .category-item {
+        flex-basis: calc(100% / 8);
+    }
+}
+
+/* @media screen and (min-width:1280px) {
+
+} */
+
+/* @media screen and (min-width:1024px) {
+    body {
+        width: 800px;
+    }
+
+    #footer {
+        width: 800px;
+    }
+} */
