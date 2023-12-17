@@ -5,11 +5,20 @@ body {
 }
 
 #accHeader {
-    width: 100%;
+    width: 90%;
+    margin: 1rem auto 0;
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    background-image: url();
+    background-image: url(../images/pattern2.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    border: 1px solid #ecf0f4;
+    box-shadow: 0 0 7px 0 #eaeff4;
+    -webkit-box-shadow: 0 0 7px 0 #eaeff4;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .accHeader-top {
@@ -20,7 +29,11 @@ body {
 
 .accHeader-top i {
     font-size: 1.3rem;
-    color: rgba(0 ,0 ,0 ,.8);
+    color: rgba(0 ,0 ,0 ,.6);
+}
+
+.accHeader-top a:nth-child(2) {
+    position: relative;
 }
 
 .accHeader-top img {
@@ -30,6 +43,7 @@ body {
     border-radius: 50px;
     object-fit: contain;
     object-position: center;
+    background-color: #fff;
 }
 
 .accHeader-bottom {
@@ -37,8 +51,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 1.2rem 0;
-    border-bottom: 1px solid rgba(0 ,0 ,0 ,.1);
+    padding: 1.2rem 0 0;
 }
 
 .accHeader-bottom div {
@@ -56,14 +69,14 @@ body {
 .accHeader-bottom a {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
 }
 
 .accHeader-bottom div p {
     font-size: .9rem;
     color: rgba(0 ,0 ,0 ,.5);
     letter-spacing: 1px;
-    margin-left: .3rem;
+    margin: .1rem .3rem;
 }
 
 .accHeader-bottom i {
