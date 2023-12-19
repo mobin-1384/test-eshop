@@ -133,25 +133,26 @@ body {
     padding: 1rem;
 }
 
-.accItems > a:hover {
+.accItems > a:hover , .accItems > .accDropDownMenu:hover{
     background-color: rgba(0 ,0 ,0 , .05);
+    cursor: pointer;
 }
 
-.accItems > a > div {
+.accItems > a > div , .accItems > .accDropDownMenu > div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.accItems > a i {
+.accItems > a i , .accItems > .accDropDownMenu i {
     color: rgba(0 ,0 ,0 ,.6);
 }
 
-.accItems a:hover > i {
+.accItems a:hover > i , .accItems .accDropDownMenu:hover > i {
     color: #19bfd3;
 }
 
-.accItems > a > div > p {
+.accItems > a > div > p , .accItems > .accDropDownMenu > div > p{
     font-size: .9rem;
     color: rgba(0 ,0 ,0 ,.8);
     margin-right: .7rem;
@@ -213,6 +214,22 @@ body {
 .accSettingHeader a:hover i {
     color: red;
 }
+
+/*  ===============CALLUS============== */
+
+.accDropDownMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ecf0f4;
+    border-right: none;
+    border-left: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* .accDropDownMenu:hover  */
 
 /*  ===============LOG / SING============== */
 
