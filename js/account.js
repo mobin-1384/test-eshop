@@ -1,5 +1,15 @@
 // ===============ACCOUNT================
 
+// Call us drop down menu 
+
+function dropDown(elem) {
+    elem.classList.toggle("removeBorderBottom");
+    // elem.nextElementSibling.style.display="flex";
+    elem.nextElementSibling.classList.toggle("activeDropDown");
+    let dropDown_i = elem.children[1];
+    dropDown_i.classList.toggle("openDropDown");
+}
+
 // Singup
 
 var showPass = document.querySelector("#showPass");
@@ -45,3 +55,4 @@ if (doneCode != null) {
         window.open("./changePass.html", "_parent");
     });
 }
+

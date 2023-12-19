@@ -229,6 +229,51 @@ body {
     padding: 1rem;
 }
 
+.accDropDownItem {
+    display: none;
+    /* display: flex; */
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid #ecf0f4;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 1rem;
+    border-top: 0;
+    font-size: .9rem;
+    color: rgba(0 ,0 ,0 ,.9);
+}
+
+.activeDropDown {
+    display: flex;
+}
+.removeBorderBottom {
+    border-bottom: none !important;
+}
+.openDropDown {
+    transform: rotate(-90deg) !important;
+    color: #19bfd3 !important;
+}
+
+.accDropDownItem div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #ecf0f4;
+    margin: 0 1rem;
+}
+
+.accDropDownItem div:first-child {
+    padding-top: .5rem;
+}
+
+.accDropDownItem div:last-child {
+    border: none;
+    padding-bottom: .5rem;
+}
+
+
 /*  ===============LOG / SING============== */
 
 .areaAnime {
