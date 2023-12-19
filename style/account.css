@@ -4,7 +4,7 @@ body {
     color: rgba(0 ,0 ,0 ,.9);
 }
 
-#accSection {
+.accSection {
     width: 90%;
     margin: 1rem auto;
     border: 1px solid #ecf0f4;
@@ -121,7 +121,7 @@ body {
     color: #00e5ff;
 }
 
-#accItems > a {
+.accItems > a {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -133,38 +133,86 @@ body {
     padding: 1rem;
 }
 
-#accItems > a:hover {
+.accItems > a:hover {
     background-color: rgba(0 ,0 ,0 , .05);
 }
 
-#accItems > a > div {
+.accItems > a > div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#accItems > a i {
+.accItems > a i {
     color: rgba(0 ,0 ,0 ,.8);
 }
 
-#accItems a:hover > i {
+.accItems a:hover > i {
     color: #19bfd3;
 }
 
-#accItems > a > div > p {
+.accItems > a > div > p {
     font-size: .9rem;
     color: rgba(0 ,0 ,0 ,.8);
     margin-right: .7rem;
 }
 
-#accItems a:last-child:hover i {
+.accItems a#accExit:hover i {
     color: rgb(255, 0, 0);
 }
 
-#accItems a:last-child:hover p {
+.accItems a#accExit:hover p {
     color: rgb(255, 0, 0);
 }
 
+/*  ===============SETTING============== */
+
+.setting-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 2rem;
+    text-align: center;
+}
+
+.setting-footer h2 {
+    padding-right: 0.4rem;
+    color: #265073;
+    font-family: "Lalehzar";
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin: 0;
+}
+
+.accExitAccount {
+    justify-content: center !important;
+}
+
+.accExitAccount > div p , .accExitAccount > div i {
+    color: #ef4056 !important;
+}
+
+.accExitAccount:hover i , .accExitAccount:hover p {
+    color: red !important;
+}
+
+.accSettingHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ecf0f4;
+    border-right: none;
+    border-left: none;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.accSettingHeader > a > i {
+    color: rgba(0 ,0 ,0 ,.9);
+}
+
+.accSettingHeader a:hover i {
+    color: red;
+}
 
 /*  ===============LOG / SING============== */
 
