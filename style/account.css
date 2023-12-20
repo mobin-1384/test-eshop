@@ -260,8 +260,12 @@ body {
     color: rgba(0, 0, 0, .9);
 }
 
+.Qanswer {
+    display: none !important;
+}
+
 .activeDropDown {
-    display: flex;
+    display: flex !important;
 }
 
 .removeBorderBottom {
@@ -324,6 +328,23 @@ body {
 
 .socialMediaItem i.eita {
     color: orange;
+}
+
+/*  ===============QUESTION============== */
+
+.questions {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.questions:nth-last-child(2) {
+    border: none;
+    padding-bottom: 0.5rem;
+}
+
+.Qanswer {
+    line-height: 25px;
+    margin: auto !important;
 }
 
 /*  ===============LOG / SING============== */
