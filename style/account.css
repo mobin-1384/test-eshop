@@ -1,7 +1,11 @@
 /*  ===============ACCOUNT============== */
 
 body {
-    color: rgba(0 ,0 ,0 ,.9);
+    color: rgba(0, 0, 0, .9);
+}
+
+.callSettingBody {
+    padding-bottom: 5rem;
 }
 
 .accSection {
@@ -33,17 +37,17 @@ body {
 
 .accHeader-top i {
     font-size: 1.3rem;
-    color: rgba(0 ,0 ,0 ,.6);
+    color: rgba(0, 0, 0, .6);
 }
 
 .accHeader-top a:hover i {
     cursor: pointer;
-    color: rgba(0 ,0 ,0 ,.8);
+    color: rgba(0, 0, 0, .8);
 }
 
 .accHeader-top a:nth-child(2) {
     position: relative;
-    border: 1px solid rgba(0 ,0 ,0 , .1);
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 50px;
     width: 100px;
     height: 100px;
@@ -55,7 +59,7 @@ body {
     top: 0;
     right: 0;
     width: 100%;
-    background-color: rgba(0 ,0 ,0 ,.2);
+    background-color: rgba(0, 0, 0, .2);
     height: 100%;
     display: flex;
     /* display: none; */
@@ -96,7 +100,7 @@ body {
     font-weight: 100;
     font-size: 1rem;
     margin-bottom: .5rem;
-    color: rgba(0 ,0 ,0 ,.8);
+    color: rgba(0, 0, 0, .8);
 }
 
 .accHeader-bottom a {
@@ -107,7 +111,7 @@ body {
 
 .accHeader-bottom div p {
     font-size: .9rem;
-    color: rgba(0 ,0 ,0 ,.5);
+    color: rgba(0, 0, 0, .5);
     letter-spacing: 1px;
     margin: .1rem .3rem;
 }
@@ -121,7 +125,7 @@ body {
     color: #00e5ff;
 }
 
-.accItems > a {
+.accItems>a {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -133,28 +137,33 @@ body {
     padding: 1rem;
 }
 
-.accItems > a:hover , .accItems > .accDropDownMenu:hover{
-    background-color: rgba(0 ,0 ,0 , .05);
+.accItems>a:hover,
+.accItems>.accDropDownMenu:hover {
+    background-color: rgba(0, 0, 0, .05);
     cursor: pointer;
 }
 
-.accItems > a > div , .accItems > .accDropDownMenu > div {
+.accItems>a>div,
+.accItems>.accDropDownMenu>div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.accItems > a i , .accItems > .accDropDownMenu i {
-    color: rgba(0 ,0 ,0 ,.6);
+.accItems>a i,
+.accItems>.accDropDownMenu i {
+    color: rgba(0, 0, 0, .6);
 }
 
-.accItems a:hover > i , .accItems .accDropDownMenu:hover > i {
+.accItems a:hover>i,
+.accItems .accDropDownMenu:hover>i {
     color: #19bfd3;
 }
 
-.accItems > a > div > p , .accItems > .accDropDownMenu > div > p{
+.accItems>a>div>p,
+.accItems>.accDropDownMenu>div>p {
     font-size: .9rem;
-    color: rgba(0 ,0 ,0 ,.8);
+    color: rgba(0, 0, 0, .8);
     margin-right: .7rem;
 }
 
@@ -170,9 +179,14 @@ body {
 
 .setting-footer {
     width: 100%;
-    position: absolute;
-    bottom: 2rem;
+    position: fixed;
+    bottom: 0;
     text-align: center;
+    background-color: #fff;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .setting-footer h2 {
@@ -188,11 +202,13 @@ body {
     justify-content: center !important;
 }
 
-.accExitAccount > div p , .accExitAccount > div i {
+.accExitAccount>div p,
+.accExitAccount>div i {
     color: #ef4056 !important;
 }
 
-.accExitAccount:hover i , .accExitAccount:hover p {
+.accExitAccount:hover i,
+.accExitAccount:hover p {
     color: red !important;
 }
 
@@ -207,8 +223,8 @@ body {
     justify-content: space-between;
 }
 
-.accSettingHeader > a > i {
-    color: rgba(0 ,0 ,0 ,.9);
+.accSettingHeader>a>i {
+    color: rgba(0, 0, 0, .9);
 }
 
 .accSettingHeader a:hover i {
@@ -241,15 +257,17 @@ body {
     padding: 1rem;
     border-top: 0;
     font-size: .9rem;
-    color: rgba(0 ,0 ,0 ,.9);
+    color: rgba(0, 0, 0, .9);
 }
 
 .activeDropDown {
     display: flex;
 }
+
 .removeBorderBottom {
     border-bottom: none !important;
 }
+
 .openDropDown {
     transform: rotate(-90deg) !important;
     color: #19bfd3 !important;
@@ -271,6 +289,16 @@ body {
 .accDropDownItem div:last-child {
     border: none;
     padding-bottom: .5rem;
+}
+
+.addressP {
+    line-height: 25px;
+}
+
+.map {
+    width: 100%;
+    border: 0;
+
 }
 
 
@@ -422,11 +450,11 @@ body {
     position: relative;
     margin: auto;
     border-radius: 5px;
-    border: 1px solid rgba(0 ,0 ,0 , .1);
+    border: 1px solid rgba(0, 0, 0, .1);
     padding: 20px;
     background-color: #fff;
     font-size: .9em;
-    color: rgba(0 ,0 ,0 ,.9);
+    color: rgba(0, 0, 0, .9);
     z-index: 5;
 }
 
@@ -440,7 +468,7 @@ body {
 .loginTop h3 {
     font-size: 1.1em;
     font-weight: 400;
-    color: rgba(0 ,0 ,0 ,.9);
+    color: rgba(0, 0, 0, .9);
 }
 
 .loginTop h3 span {
@@ -462,9 +490,9 @@ body {
     color: rgb(255, 132, 132);
 }
 
-.login > hr {
+.login>hr {
     width: 100%;
-    border: 1px solid rgba(0 ,0 ,0 , .1);
+    border: 1px solid rgba(0, 0, 0, .1);
     margin: 15px 0;
 }
 
@@ -486,7 +514,7 @@ body {
     width: 100%;
     border: none;
     outline: none;
-    background-color: rgba(0 ,0 ,0 , .1);
+    background-color: rgba(0, 0, 0, .1);
     font-size: .8em;
     margin: 10px 0 15px;
     padding: 12px;
@@ -500,7 +528,7 @@ body {
 }
 
 .loginSection input:focus {
-    background-color: rgba(255 , 255 , 255 , 1);
+    background-color: rgba(255, 255, 255, 1);
     box-shadow: inset 2px 2px #50c8ff, inset -2px -2px #0095da;
 }
 
@@ -514,7 +542,7 @@ body {
 }
 
 .loginBottom-showPass label {
-    color: rgba(0 ,0 ,0 ,.7);
+    color: rgba(0, 0, 0, .7);
     font-size: .8rem;
     margin-right: .6rem;
     cursor: pointer;
@@ -541,17 +569,19 @@ body {
     background-color: #2eb353;
 }
 
-.loginBottom a , .forgetPass a {
-    color: rgba(0 ,0 ,0 ,.8);
-    border-bottom: 1px solid rgba(0 ,0 ,0 ,.2);
+.loginBottom a,
+.forgetPass a {
+    color: rgba(0, 0, 0, .8);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
     font-size: .7rem;
     line-height: 20px;
 }
 
-.loginBottom a:hover , .forgetPass a:hover {
+.loginBottom a:hover,
+.forgetPass a:hover {
     border: none;
     cursor: pointer;
-    color: rgba(0 ,0 ,0 ,.7);
+    color: rgba(0, 0, 0, .7);
 }
 
 .forgetPass {
