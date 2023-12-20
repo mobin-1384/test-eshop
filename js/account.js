@@ -45,7 +45,8 @@ if (reCodeBtn != null) {
         doneCodeBtn.style.display="block";
         reCodeLable.style.display="flex";
         reCodeInp.style.display="block";
-        Alert(5000);
+        var text = "کد بازیابی با موفقیت برای شما ارسال شد !";
+        Alert(5000, "success", text);
     });
 }
 
