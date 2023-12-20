@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="http://cdn.font-store.ir/yekan.css" type="text/css">
     <link rel="stylesheet" href="../style/style.css">
     <!-- OUT OF OTHER -->
+    <link rel="stylesheet" href="../style/Alert.css">
     <link rel="stylesheet" href="../style/account.css">
     <!-- / OUT OF OTHER -->
     <link rel="icon" href="../images/icon.jpg" type="image/x-icon">
@@ -24,6 +25,8 @@
 </head>
 
 <body class="callSettingBody">
+
+    <div id="alert"></div>
 
     <section class="accSection">
         <div class="accItems">
@@ -55,7 +58,7 @@
                         <textarea class="ticketInp" name="tText" id="tText"></textarea>
                     </div>
                     <div>
-                        <button type="submit">ثبت</button>
+                        <button onclick="sendTicket()" type="submit">ثبت</button>
                     </div>
                 </form>
             </div>
@@ -75,6 +78,7 @@
     "></script>
 
     <!-- OUT OF OTHER -->
+    <script src="../js/Alert.js"></script>
     <script src="../js/account.js"></script>
     <!-- / OUT OF OTHER -->
 
