@@ -273,7 +273,7 @@ body {
     color: #19bfd3 !important;
 }
 
-.accDropDownItem div {
+.accDropDownItem>div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -282,11 +282,11 @@ body {
     margin: 0 1rem;
 }
 
-.accDropDownItem div:first-child {
+.accDropDownItem>div:first-child {
     padding-top: .5rem;
 }
 
-.accDropDownItem div:last-child {
+.accDropDownItem>div:last-child {
     border: none;
     padding-bottom: .5rem;
 }
@@ -301,6 +301,30 @@ body {
 
 }
 
+.socialMediaItem>div>div {
+    display: flex;
+    flex-direction: row;
+}
+
+.socialMediaItem>div>div>i {
+    margin-left: .5rem;
+    font-size: 1rem;
+}
+
+.socialMediaItem i.fa-instagram {
+    font-size: 1.2rem;
+    background: linear-gradient(to top, #833ab4, #fd1d1d, #fcb045);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.socialMediaItem i.fa-telegram {
+    color: #2aa1dd;
+}
+
+.socialMediaItem i.eita {
+    color: orange;
+}
 
 /*  ===============LOG / SING============== */
 
