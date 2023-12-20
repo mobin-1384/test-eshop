@@ -386,7 +386,7 @@ body {
 
 .newTicketSection select {
     font-size: .9rem;
-    padding: 0 !important;
+    padding: 0 .5rem !important;
 }
 
 .ticketInp {
@@ -431,6 +431,10 @@ body {
 .newTicketSection button:hover {
     cursor: pointer;
     background-color: #2eb353;
+}
+
+#divSubject {
+    display: none;
 }
 
 /*  ===============LOG / SING============== */
