@@ -366,7 +366,7 @@ body {
 .ticketItem > a > div , .ticketItem > a > i {
     display: flex;
     font-size: .9rem;
-    color: rgba(0, 0, 0, .9);
+    color: rgba(0, 0, 0, .8);
 }
 
 .ticketItem > a > div > i {
@@ -441,6 +441,7 @@ body {
 
 .allTicket {
     padding: 1rem;
+    color: rgba(0, 0, 0, .8);
 }
 
 .allTicket > li {
@@ -543,6 +544,24 @@ body {
 .noResponse:hover {
     background-color: #fff;
     cursor: default;
+}
+
+.ticketHeaderP {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.ticketHeaderP a {
+    font-size: .8rem;
+    margin-right: 1rem;
+    color: #19bfd3;
+}
+
+.ticketHeaderP a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(0, 223, 248);
 }
 
 /*  ===============LOG / SING============== */
