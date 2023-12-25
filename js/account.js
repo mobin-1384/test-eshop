@@ -60,14 +60,16 @@ if (doneCode != null) {
 // Send Ticket 
 
 var selectBox = document.querySelector("#tSubject");
-selectBox.addEventListener("change", function(){
-    var selected_index = selectBox.selectedIndex;
-    if (selected_index == 1) {
-        document.querySelector("#divSubject").style.display = "block";
-    } else {
-        document.querySelector("#divSubject").style.display = "none";
-    }
-})
+if (selectBox != null) {
+    selectBox.addEventListener("change", function(){
+        var selected_index = selectBox.selectedIndex;
+        if (selected_index == 1) {
+            document.querySelector("#divSubject").style.display = "block";
+        } else {
+            document.querySelector("#divSubject").style.display = "none";
+        }
+    })
+}
 
 function sendTicket() {
     var doneTicket = "تیکت با موفقیت ارسال شد !";

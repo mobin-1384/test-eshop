@@ -437,6 +437,69 @@ body {
     display: none;
 }
 
+/* ========= all ticket ========= */
+
+.allTicket {
+    padding: 1rem;
+}
+
+.allTicket > li {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ecf0f4;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.allTicket > li:first-child {
+    margin-top: 0;
+}
+
+.allTicket--top {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+.allTicket--top p:first-child {
+    font-size: .9rem;
+}
+
+.allTicket--top p:last-child {
+    font-size: 1rem;
+    align-self: center;
+}
+
+.allTicket--middle {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    font-size: .8rem;
+    border-top: 1px solid #ecf0f4;
+    border-bottom: 1px solid #ecf0f4;
+    justify-content: space-between;
+}
+
+.allTicket--middle > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.allTicket--middle > div > i {
+    margin-left: .4rem;
+}
+
+.showResponse {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    font-size: .9rem;
+    align-items: center;
+}
+
 /*  ===============LOG / SING============== */
 
 .areaAnime {
