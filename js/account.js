@@ -76,7 +76,11 @@ function sendTicket() {
     Alert(5000, "success", doneTicket)
 }
 
+// show response Ticket
+
 function showResponseTxt(elem) {
     elem.children[1].classList.toggle("openDropDown");
     elem.nextElementSibling.classList.toggle("ResponseTxtActive");
 }
+
+// 

@@ -318,6 +318,7 @@ body {
 .socialMediaItem i.fa-instagram {
     font-size: 1.2rem;
     background: linear-gradient(to top, #833ab4, #fd1d1d, #fcb045);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
