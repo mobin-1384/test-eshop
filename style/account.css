@@ -474,13 +474,18 @@ body {
 }
 
 .allTicket--top p:first-child {
+    font-size: .9rem;
+    color: #19bfd3;
+}
+
+.allTicket--top p:nth-child(2) {
     font-size: .8rem;
+    margin: 0 .5rem 0 .2rem;
 }
 
 .allTicket--top p:last-child {
     font-size: .9rem;
     align-self: center;
-    margin-right: .5rem;
 }
 
 .allTicket--middle {
