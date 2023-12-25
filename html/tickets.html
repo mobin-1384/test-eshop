@@ -41,23 +41,58 @@
                         <p>موضوع :</p>
                         <p>گزارش خطا</p>
                     </div>
-                    <div class="allTicket--middle">
-                        <div>
-                            <p>ارسال شده در</p>
+                    <div class="allTicket--text">
+                        <div class="showResponse" onclick="showResponseTxt(this)">
+                            <p>مشاهده متن تیکت</p>
+                            <i class="fa-solid fa-angle-left"></i>
                         </div>
-                        <div>
-                            <i class="fa-regular fa-calendar"></i>
-                            <p>۱۴۰۲/۰۴/۲۳</p>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-clock"></i>
-                            <P>۲۳:۳۰</P>
+                        <div class="ResponseTxt">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی
+                                در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه می طلبد
+                            </p>
+                            <div class="allTicket--middle">
+                                <div>
+                                    <p>ارسال شده در</p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <p>۱۴۰۲/۰۴/۲۳</p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <P>۲۳:۳۰</P>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="allTicket--bottom">
-                        <div class="showResponse">
-                            <p>مشاهده پاسخ‌</p>
+                        <div class="showResponse" onclick="showResponseTxt(this)">
+                            <p>مشاهده پاسخ</p>
                             <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="ResponseTxt">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی
+                                در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه می طلبد
+                            </p>
+                            <div class="allTicket--middle">
+                                <div>
+                                    <p>پاسخ توسط <span>admin</span></p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <p>۱۴۰۲/۰۴/۲۳</p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <P>۲۳:۳۰</P>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -66,73 +101,96 @@
                         <p>موضوع :</p>
                         <p>پیشنهاد</p>
                     </div>
-                    <div class="allTicket--middle">
-                        <div>
-                            <p>ارسال شده در</p>
+                    <div class="allTicket--text">
+                        <div class="showResponse" onclick="showResponseTxt(this)">
+                            <p>مشاهده متن تیکت</p>
+                            <i class="fa-solid fa-angle-left"></i>
                         </div>
-                        <div>
-                            <i class="fa-regular fa-calendar"></i>
-                            <p>۱۴۰۲/۰۴/۲۳</p>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-clock"></i>
-                            <P>۲۳:۳۰</P>
+                        <div class="ResponseTxt">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی
+                                در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه می طلبد
+                            </p>
+                            <div class="allTicket--middle">
+                                <div>
+                                    <p>ارسال شده در</p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <p>۱۴۰۲/۰۴/۲۳</p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <P>۲۳:۳۰</P>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="allTicket--bottom">
-                        <div class="showResponse">
-                            <p>مشاهده پاسخ‌</p>
-                            <i class="fa-solid fa-angle-left"></i>
+                        <div class="showResponse noResponse">
+                            <p>هنوز پاسخی برای این تیکت ثبت نشده است !</p>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="allTicket--top">
                         <p>موضوع :</p>
-                        <p>گزارش خطا</p>
+                        <p>عدم دسترسی به سبد خرید</p>
                     </div>
-                    <div class="allTicket--middle">
-                        <div>
-                            <p>ارسال شده در</p>
+                    <div class="allTicket--text">
+                        <div class="showResponse" onclick="showResponseTxt(this)">
+                            <p>مشاهده متن تیکت</p>
+                            <i class="fa-solid fa-angle-left"></i>
                         </div>
-                        <div>
-                            <i class="fa-regular fa-calendar"></i>
-                            <p>۱۴۰۲/۰۴/۲۳</p>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-clock"></i>
-                            <P>۲۳:۳۰</P>
+                        <div class="ResponseTxt">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی
+                                در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه می طلبد
+                            </p>
+                            <div class="allTicket--middle">
+                                <div>
+                                    <p>ارسال شده در</p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <p>۱۴۰۲/۰۴/۲۳</p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <P>۲۳:۳۰</P>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="allTicket--bottom">
-                        <div class="showResponse">
-                            <p>مشاهده پاسخ‌</p>
+                        <div class="showResponse" onclick="showResponseTxt(this)">
+                            <p>مشاهده پاسخ</p>
                             <i class="fa-solid fa-angle-left"></i>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="allTicket--top">
-                        <p>موضوع :</p>
-                        <p>پیشنهاد</p>
-                    </div>
-                    <div class="allTicket--middle">
-                        <div>
-                            <p>ارسال شده در</p>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-calendar"></i>
-                            <p>۱۴۰۲/۰۴/۲۳</p>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-clock"></i>
-                            <P>۲۳:۳۰</P>
-                        </div>
-                    </div>
-                    <div class="allTicket--bottom">
-                        <div class="showResponse">
-                            <p>مشاهده پاسخ‌</p>
-                            <i class="fa-solid fa-angle-left"></i>
+                        <div class="ResponseTxt">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی
+                                در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه می طلبد
+                            </p>
+                            <div class="allTicket--middle">
+                                <div>
+                                    <p>پاسخ توسط <span>admin</span></p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <p>۱۴۰۲/۰۴/۲۳</p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <P>۲۳:۳۰</P>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </li>

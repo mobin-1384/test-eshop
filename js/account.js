@@ -75,3 +75,8 @@ function sendTicket() {
     var doneTicket = "تیکت با موفقیت ارسال شد !";
     Alert(5000, "success", doneTicket)
 }
+
+function showResponseTxt(elem) {
+    elem.children[1].classList.toggle("openDropDown");
+    elem.nextElementSibling.classList.toggle("ResponseTxtActive");
+}

@@ -446,7 +446,7 @@ body {
 .allTicket > li {
     display: flex;
     flex-direction: column;
-    border: 1px solid #ecf0f4;
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
     margin-top: 1rem;
 }
@@ -455,20 +455,30 @@ body {
     margin-top: 0;
 }
 
+.allTicket > li > div {
+    border-top: 1px solid #ecf0f4;
+}
+
+.allTicket > li > div:first-child {
+    border-top: none;
+}
+
 .allTicket--top {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 1rem;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .allTicket--top p:first-child {
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .allTicket--top p:last-child {
-    font-size: 1rem;
+    font-size: .9rem;
     align-self: center;
+    margin-right: .5rem;
 }
 
 .allTicket--middle {
@@ -476,8 +486,6 @@ body {
     display: flex;
     flex-direction: row;
     font-size: .8rem;
-    border-top: 1px solid #ecf0f4;
-    border-bottom: 1px solid #ecf0f4;
     justify-content: space-between;
 }
 
@@ -496,8 +504,45 @@ body {
     padding: 1rem;
     width: 100%;
     justify-content: space-between;
-    font-size: .9rem;
+    font-size: .8rem;
     align-items: center;
+}
+
+.showResponse:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.showResponse:hover > i {
+    color: #19bfd3;
+}
+
+.ResponseTxt > p {
+    padding: .5rem 1.5rem;
+    font-size: .85rem;
+    line-height: 25px;
+}
+
+.ResponseTxt {
+    display: none;
+}
+
+.ResponseTxtActive {
+    display: block;
+}
+
+.allTicket--middle > div:first-child > p > span {
+    margin-right: .1rem;
+}
+
+.noResponse {
+    color: #ff001d;
+    justify-content: center;
+}
+
+.noResponse:hover {
+    background-color: #fff;
+    cursor: default;
 }
 
 /*  ===============LOG / SING============== */
