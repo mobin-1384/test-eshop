@@ -15,21 +15,30 @@ function dropDown(elem) {
 var showPass = document.querySelector("#showPass");
 var password = document.querySelector("#password");
 var passwordRe = document.querySelector("#passwordRe");
+var newpassword = document.querySelector("#newpassword");
 if (showPass != null) {
     showPass.addEventListener('change', function () {
-        if (passwordRe == null) {
-            if (this.checked) {
+        if (this.checked) {
+            if (passwordRe == null) {
                 password.type = "text";
-            } else {
-                password.type = "password";
-            }
-        } else {
-            if (this.checked) {
+            } else if (newpassword == null) {
                 password.type = "text";
                 passwordRe.type = "text";
             } else {
+                password.type = "text";
+                passwordRe.type = "text";
+                newpassword.type = "text";
+            }
+        } else {
+            if (passwordRe == null) {
+                password.type = "password";
+            } else if (newpassword == null) {
                 password.type = "password";
                 passwordRe.type = "password";
+            } else {
+                password.type = "password";
+                passwordRe.type = "password";
+                newpassword.type = "password";
             }
         }
     });

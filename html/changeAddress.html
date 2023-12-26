@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/reset-hub.css">
+    <link rel="stylesheet" href="../fonts/Vazir.css">
+    <link rel="stylesheet" href="../fonts/IRANsans.css">
+    <link rel="stylesheet" href="../fonts/Fedra.css">
+    <link rel="stylesheet" href="../fonts/Lalehzar.css">
+    <link rel="stylesheet" href="../fonts/Yekan.css">
+    <script src="https://kit.fontawesome.com/3af4c226dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/owl.carousel.css">
+    <link rel="stylesheet" href="../style/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="http://cdn.font-store.ir/yekan.css" type="text/css">
+    <link rel="stylesheet" href="../style/style.css">
+    <!-- OUT OF OTHER -->
+    <link rel="stylesheet" href="../style/Alert.css">
+    <link rel="stylesheet" href="../style/account.css">
+    <!-- / OUT OF OTHER -->
+    <link rel="icon" href="../images/icon.jpg" type="image/x-icon">
+    <title>حساب کاربری</title>
+</head>
+
+<body class="callSettingBody">
+
+    <div id="alert"></div>
+
+    <section class="accSection">
+        <div class="accItems">
+            <div class="accSettingHeader">
+                <div>
+                    <p>ویرایش آدرس</p>
+                </div>
+                <a href="./account.html">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+            </div>
+            <div class="newTicketSection">
+                <form action="#">
+                    <div class="editProfile--name">
+                        <label for="addProvince">استان : <span>*</span></label>
+                        <input placeholder="استان محل سکونت خود را وارد کنید" value="" class="ticketInp" type="text"
+                            id="addProvince">
+                        <label for="addCity">شهر : <span>*</span></label>
+                        <input placeholder="شهر محل سکونت خود را وارد کنید" value="" class="ticketInp" type="text"
+                            id="addCity">
+                        <label for="addHood">محله :</label>
+                        <input placeholder="نام محله خود را وارد کنید" value="" class="ticketInp" type="text"
+                            id="addHood">
+                        <label for="addMainStreet">خیابان اصلی : <span>*</span></label>
+                        <input placeholder="نام خیابان اصلی محل سکونت" value="" class="ticketInp" type="text"
+                            id="addMainStreet">
+                        <label for="addSubStreet">خیابان فرعی :</label>
+                        <input placeholder="نام خیابان فرعی محل سکونت" value="" class="ticketInp" type="text"
+                            id="addSubStreet">
+                        <label for="addAlley">کوچه : <span>*</span></label>
+                        <input placeholder="نام کوچه محل سکونت" value="" class="ticketInp" type="text" id="addAlley">
+                        <div class="plateUnit">
+                            <div>
+                                <label for="addPalte">پلاک : <span>*</span></label>
+                                <input placeholder="" value="" class="ticketInp" type="number" id="addPalte">
+                            </div>
+                            <div>
+                                <label for="addUnit">واحد :</label>
+                                <input placeholder="" value="" class="ticketInp" type="number" id="addUnit">
+                            </div>
+                        </div>
+                        <label for="addPost">کد پستی : <span>*</span></label>
+                        <input placeholder="کد پستی خود را وارد کنید" value="" class="ticketInp" type="number"
+                            id="addPost">
+                        <label for="addNum">شماره موبایل گیرنده : <span>*</span></label>
+                        <input placeholder="شماره موبایل شخص گیرنده را وارد کنید" value="" class="ticketInp"
+                            type="number" id="addNum">
+                        <label for="addPhoneNum">شماره تلفن ثابت :</label>
+                        <input placeholder="شماره تلفن ثابت خود را وارد کنید" value="" class="ticketInp" type="number"
+                            id="addPhoneNum">
+                        <label for="addExtra">توضیحات بیشتر :</label>
+                        <textarea class="ticketInp" name="addExtra" id="addExtra"></textarea>
+                    </div>
+                    <div>
+                        <button onclick="saveProfile()" type="submit">ذخیره</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="setting-footer">
+        <h2>سما سیستم</h2>
+    </div>
+
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/jquery.menu-aim.js"></script>
+    <!-- <script src="./js/splide.min.js"></script> -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+
+    <!-- OUT OF OTHER -->
+    <script src="../js/Alert.js"></script>
+    <script src="../js/account.js"></script>
+    <!-- / OUT OF OTHER -->
+
+</body>
+
+</html>
