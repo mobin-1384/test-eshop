@@ -16,7 +16,7 @@ var showPass = document.querySelector("#showPass");
 var password = document.querySelector("#password");
 var passwordRe = document.querySelector("#passwordRe");
 if (showPass != null) {
-    showPass.addEventListener('change' ,function(){
+    showPass.addEventListener('change', function () {
         if (passwordRe == null) {
             if (this.checked) {
                 password.type = "text";
@@ -37,14 +37,14 @@ if (showPass != null) {
 
 var reCodeBtn = document.querySelector("#reCode");
 if (reCodeBtn != null) {
-    reCodeBtn.addEventListener("click", function(){
+    reCodeBtn.addEventListener("click", function () {
         var doneCodeBtn = document.querySelector("#doneCode");
         var reCodeLable = document.querySelector("#reCodeLable");
         var reCodeInp = document.querySelector("#reCodeInp");
-        reCodeBtn.style.display="none";
-        doneCodeBtn.style.display="block";
-        reCodeLable.style.display="flex";
-        reCodeInp.style.display="block";
+        reCodeBtn.style.display = "none";
+        doneCodeBtn.style.display = "block";
+        reCodeLable.style.display = "flex";
+        reCodeInp.style.display = "block";
         var text = "کد بازیابی با موفقیت برای شما ارسال شد !";
         Alert(5000, "success", text);
     });
@@ -52,7 +52,7 @@ if (reCodeBtn != null) {
 
 var doneCode = document.querySelector("#doneCode");
 if (doneCode != null) {
-    doneCode.addEventListener("click", function(){
+    doneCode.addEventListener("click", function () {
         window.open("./changePass.html", "_parent");
     });
 }
@@ -61,7 +61,7 @@ if (doneCode != null) {
 
 var selectBox = document.querySelector("#tSubject");
 if (selectBox != null) {
-    selectBox.addEventListener("change", function(){
+    selectBox.addEventListener("change", function () {
         var selected_index = selectBox.selectedIndex;
         if (selected_index == 1) {
             document.querySelector("#divSubject").style.display = "block";
@@ -83,4 +83,17 @@ function showResponseTxt(elem) {
     elem.nextElementSibling.classList.toggle("ResponseTxtActive");
 }
 
-// 
+// edit profile
+
+function saveProfile() {
+    var proName = document.querySelector("#proName");
+    var proNumber = document.querySelector("#proPhone");
+    if (proName.value == "" || proNumber.value == "") {
+        var completeSave = "لطفا فیلد‌هایی که ستاره قرمز دارند را تکمیل کنید !";
+        Alert(5000, "danger", completeSave);
+    }
+    else {
+        var doneSave = "اطلاعات شما با موفقیت ذخیره شد !";
+        Alert(5000, "success", doneSave)
+    }
+}

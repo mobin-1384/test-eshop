@@ -350,7 +350,7 @@ body {
 
 /*  ===============TICKET============== */
 
-.ticketItem > a {
+.ticketItem>a {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -360,25 +360,26 @@ body {
     margin-bottom: 1rem;
 }
 
-.ticketItem > a:hover {
+.ticketItem>a:hover {
     background-color: rgba(0, 0, 0, .05);
 }
 
-.ticketItem > a > div , .ticketItem > a > i {
+.ticketItem>a>div,
+.ticketItem>a>i {
     display: flex;
     font-size: .9rem;
     color: rgba(0, 0, 0, .8);
 }
 
-.ticketItem > a > div > i {
+.ticketItem>a>div>i {
     margin-left: .5rem;
 }
 
-.newTicketSection > form {
+.newTicketSection>form {
     padding: 1rem;
 }
 
-.newTicketSection > form > div {
+.newTicketSection>form>div {
     display: flex;
     flex-direction: column;
     padding: 0 1rem;
@@ -390,7 +391,9 @@ body {
     padding: 0 .5rem !important;
 }
 
-.ticketInp {
+.ticketInp,
+#changePassBtn,
+#forgetPassBtn {
     width: 100%;
     outline: none;
     font-size: .9em;
@@ -445,7 +448,7 @@ body {
     color: rgba(0, 0, 0, .8);
 }
 
-.allTicket > li {
+.allTicket>li {
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, .1);
@@ -453,15 +456,15 @@ body {
     margin-top: 1rem;
 }
 
-.allTicket > li:first-child {
+.allTicket>li:first-child {
     margin-top: 0;
 }
 
-.allTicket > li > div {
+.allTicket>li>div {
     border-top: 1px solid #ecf0f4;
 }
 
-.allTicket > li > div:first-child {
+.allTicket>li>div:first-child {
     border-top: none;
 }
 
@@ -496,12 +499,12 @@ body {
     justify-content: space-between;
 }
 
-.allTicket--middle > div {
+.allTicket--middle>div {
     display: flex;
     flex-direction: row;
 }
 
-.allTicket--middle > div > i {
+.allTicket--middle>div>i {
     margin-left: .4rem;
 }
 
@@ -520,11 +523,11 @@ body {
     background-color: rgba(0, 0, 0, .05);
 }
 
-.showResponse:hover > i {
+.showResponse:hover>i {
     color: #19bfd3;
 }
 
-.ResponseTxt > p {
+.ResponseTxt>p {
     padding: .5rem 1.5rem;
     font-size: .85rem;
     line-height: 25px;
@@ -538,7 +541,7 @@ body {
     display: block;
 }
 
-.allTicket--middle > div:first-child > p > span {
+.allTicket--middle>div:first-child>p>span {
     margin-right: .1rem;
 }
 
@@ -570,6 +573,51 @@ body {
     color: rgb(0, 223, 248);
 }
 
+/*  ===============EDIT PROFILE============== */
+
+.editProfile--pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editProfile--pic div:first-child {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.editProfile--pic div:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background-color: #fff;
+}
+
+.editProfile--name label span {
+    color: red;
+}
+
+#formBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#changePassBtn,
+#forgetPassBtn {
+    flex-basis: 47%;
+    background-color: #5dbea3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
 /*  ===============LOG / SING============== */
 
 .areaAnime {
@@ -577,8 +625,6 @@ body {
     background-image: linear-gradient(to top, #0093E9 0%, #80D0C7 100%);
     width: 100%;
     height: 100vh;
-
-
 }
 
 .circlesAnime {
@@ -895,6 +941,7 @@ body {
     .login {
         width: 400px;
     }
+
     .accSection {
         width: 720px;
         margin-top: 3rem;

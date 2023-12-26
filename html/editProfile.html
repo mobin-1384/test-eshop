@@ -32,7 +32,7 @@
         <div class="accItems">
             <div class="accSettingHeader">
                 <div>
-                    <p>تیکت جدید</p>
+                    <p>ویرایش پروفایل</p>
                 </div>
                 <a href="./accCallUs.html">
                     <i class="fa-solid fa-xmark"></i>
@@ -40,28 +40,29 @@
             </div>
             <div class="newTicketSection">
                 <form action="#">
-                    <div>
-                        <label for="tSubject">موضوع :</label>
-                        <select class="ticketInp" name="tSubject" id="tSubject">
-                            <option value="sub">-- یک موضوع انتخاب کنید --</option>
-                            <option value="sub">موضوع جدید</option>
-                            <option value="sub">پیشنهاد</option>
-                            <option value="sub">انتقاد یا شکایت</option>
-                            <option value="sub">پیگیری سفارش</option>
-                            <option value="sub">حسابداری و امور مالی</option>
-                            <option value="sub">گزارش باگ</option>
-                        </select>
+                    <div class="editProfile--pic">
+                        <div>
+                            <img src="../images/avatar.jpg" alt="userPic">
+                        </div>
                     </div>
-                    <div id="divSubject">
-                        <label for="tSub">موضوع :</label>
-                        <input class="ticketInp" type="text" id="tSub">
+                    <div class="editProfile--name">
+                        <label for="proName">نام : <span>*</span></label>
+                        <input placeholder="نام خود را وارد کنید" value="" class="ticketInp" type="text" id="proName">
+                        <label for="proFamily">نام خانوادگی :</label>
+                        <input placeholder="نام خانوادگی خود را وارد کنید" value=""  class="ticketInp" type="text" id="proFamily">
+                        <label for="proIdcard">کد ملی :</label>
+                        <input placeholder="کد ملی خود را وارد کنید" value=""  class="ticketInp" type="number" id="proIdcard">
+                        <label for="proPhone">تلفن همراه : <span>*</span></label>
+                        <input placeholder="شماره تلفن همراه خود را وارد کنید" value=""  class="ticketInp" type="number" id="proPhone">
+                        <label for="proEmail">ایمیل :</label>
+                        <input placeholder="ایمیل خود را وارد کنید" value=""  class="ticketInp" type="email" id="proEmail">
+                        <div id="formBtn">
+                            <a href="./changePass.html" id="changePassBtn"><p>تغییر رمز عبور</p></a>
+                            <a href="./forgetPass.html" id="forgetPassBtn"><p>فراموشی رمز عبور</p></a>
+                        </div>
                     </div>
                     <div>
-                        <label for="tText">متن تیکت :</label>
-                        <textarea class="ticketInp" name="tText" id="tText"></textarea>
-                    </div>
-                    <div>
-                        <button onclick="sendTicket()" type="submit">ثبت</button>
+                        <button onclick="saveProfile()" type="submit">ذخیره</button>
                     </div>
                 </form>
             </div>
