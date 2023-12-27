@@ -106,3 +106,18 @@ function saveProfile() {
         Alert(5000, "success", doneSave)
     }
 }
+
+// edit address
+
+function saveAddress() {
+    var addProvince = document.querySelector("#addProvince");
+    var addCity = document.querySelector("#addCity");
+    if (addProvince.value == "" || addCity.value == "") {
+        var completeSave = "لطفا فیلد‌هایی که ستاره قرمز دارند را تکمیل کنید !";
+        Alert(5000, "danger", completeSave);
+    }
+    else {
+        var doneSave = "آدرس شما با موفقیت ذخیره شد !";
+        Alert(5000, "success", doneSave)
+    }
+}

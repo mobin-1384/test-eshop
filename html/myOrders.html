@@ -17,85 +17,42 @@
     <link rel="stylesheet" href="http://cdn.font-store.ir/yekan.css" type="text/css">
     <link rel="stylesheet" href="../style/style.css">
     <!-- OUT OF OTHER -->
-    <link rel="stylesheet" href="../style/account.css">
+    <link rel="stylesheet" href="../style/Alert.css">
+    <link rel="stylesheet" href="../style/order.css">
     <!-- / OUT OF OTHER -->
     <link rel="icon" href="../images/icon.jpg" type="image/x-icon">
-    <title>حساب کاربری</title>
+    <title>تاریخپه سفارشات</title>
 </head>
 
 <body>
 
-    <section class="accSection">
-
-        <div id="accHeader">
-            <div class="accHeader-top">
-                <a href="./accSetting.html">
-                    <i class="fa-solid fa-gear"></i>
-                </a>
-                <a href="./editProfile.html">
-                    <i class="fa-regular fa-pen-to-square"></i>
-                    <img src="../images/avatar.jpg" alt="avatar">
-                </a>
-                <a href="./accCallUs.html">
-                    <i class="fa-solid fa-headset"></i>
-                </a>
-            </div>
-            <div class="accHeader-bottom">
-                <div>
-                    <h4>نام کاربر</h4>
-                    <a href="./editProfile.html">
-                        <p>۰۹۱۲۳۴۵۶۷۸۹</p>
-                        <i class="fa-regular fa-pen-to-square"></i>
-                    </a>
-                </div>
-            </div>
+    <header>
+        <div>
+            <a href="./account.html">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <h3>تاریخچه سفارشات</h3>
         </div>
+    </header>
 
-        <div class="accItems">
-            <a href="./changeAddress.html">
-                <div>
-                    <i class="fa-regular fa-map"></i>
-                    <p>آدرس من</p>
-                </div>
-                <i class="fa-solid fa-angle-left"></i>
+    <section>
+        <div class="sectionHeader">
+            <a href="#">
+                <p>جاری</p>
             </a>
-            <a href="./myOrders.html">
-                <div>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <p>سفارشات جاری من</p>
-                </div>
-                <i class="fa-solid fa-angle-left"></i>
+            <a href="#" class="orderActive">
+                <p>تحویل شده</p>
+                <div>۹</div>
             </a>
-            <a href="./myOrders.html">
-                <div>
-                    <i class="fa-solid fa-cart-arrow-down"></i>
-                    <p>سفارشات تحویل شده</p>
-                </div>
-                <i class="fa-solid fa-angle-left"></i>
+            <a href="#">
+                <p>مرجوع شده</p>
+                <div>۰</div>
             </a>
-            <a href="./myOrders.html">
-                <div>
-                    <i class="fa-solid fa-truck-arrow-right"></i>
-                    <p>سفارشات مرجوع شده</p>
-                </div>
-                <i class="fa-solid fa-angle-left"></i>
-            </a>
-            <a href="./myFavorites.html">
-                <div>
-                    <i class="fa-regular fa-heart"></i>
-                    <p>علاقمندی های من</p>
-                </div>
-                <i class="fa-solid fa-angle-left"></i>
-            </a>
-            <a href="#" id="accExit">
-                <div>
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                    <p>خروج</p>
-                </div>
-                <i class="fa-solid fa-angle-left"></i>
+            <a href="#">
+                <p>لغو شده</p>
+                <div>۰</div>
             </a>
         </div>
-
     </section>
 
     <footer id="footer">
@@ -144,7 +101,8 @@
     "></script>
 
     <!-- OUT OF OTHER -->
-    <script src="../js/account.js"></script>
+    <script src="../js/Alert.js"></script>
+    <script src="../js/order.js"></script>
     <!-- / OUT OF OTHER -->
 
 </body>
