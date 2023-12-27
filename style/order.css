@@ -50,7 +50,7 @@ header a {
     border-bottom: 3px #ef4056 solid;
 }
 
-.orderActive div {
+.orderActive div{
     background-color: #ef4056;
     color: white;
     border: none !important;
@@ -58,30 +58,116 @@ header a {
 }
 
 .orderShortcut {
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 1rem;
     border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
-.OSstatus {
+.OSstatus ,
+.OSsave ,
+.OSprice ,
+.OSitems {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    font-size: .85rem;
-    padding: 1rem 0;
+    font-size: .8rem;
+    padding: 1rem 2rem 0;
+    justify-content: space-between;
 }
 
-.OSstatus > div {
+.OSprice {
+    padding-left: 0;
+}
+
+.OSstatus div ,
+.OSsave div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.OSstatus div > div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.OSstatus > div i {
+.OSstatus div > div i,
+.OSsave i {
     font-size: 1.2rem;
     color: #6bb927;
     margin-left: .1rem;
 }
 
-.OSstatus p {
+.OSsave i {
+    color: #17a2b8;
+}
+
+.OSstatus p ,
+.OSsave > div p ,
+.OSsave > div p span {
     margin-right: .5rem;
+}
+
+.OSstatus div:nth-child(2) > p ,
+.OSsave > p {
+    color: rgba(0,0,0,.5);
+}
+
+.OSstatus div:nth-child(2) > p span ,
+.OSsave > p span {
+    color: rgba(0,0,0,.9);
+}
+
+.OSitems {
+    justify-content: flex-start;
+}
+
+.OSitems div img {
+    width: 40px;
+    object-fit: contain;
+    margin-left: 1rem;
+}
+
+.OSprice div {
+    display: flex;
+    flex-direction: row;
+}
+
+.OSprice div p:nth-child(2) {
+    margin-right: .5rem;
+    font-size: .9rem;
+}
+
+.OSprice div p:nth-child(2) span {
+    font-size: .8rem;
+    color: rgba(0,0,0,.5);
+}
+
+.OSprice > i {
+    font-size: 1rem;
+}
+
+@media screen and (min-width:500px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionHeader {
+        border: 1px solid rgba(0,0,0,.05);
+        border-top: 0;
+        width: 500px;
+    }
+    #sectionContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .orderShortcut {
+        width: 500px;
+        border: 1px solid rgba(0,0,0,.05);
+        border-top: none;
+    }
 }
