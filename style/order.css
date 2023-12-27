@@ -149,6 +149,13 @@ header a {
     font-size: 1rem;
 }
 
+.cancelIco {
+    color: #ef4056 !important;
+}
+.dangerIco {
+    color: #ffc107 !important;
+}
+
 @media screen and (min-width:500px) {
     section {
         display: flex;
