@@ -96,12 +96,7 @@ header a {
 .OSstatus div > div i,
 .OSsave i {
     font-size: 1.2rem;
-    color: #6bb927;
     margin-left: .1rem;
-}
-
-.OSsave i {
-    color: #17a2b8;
 }
 
 .OSstatus p ,
@@ -149,6 +144,12 @@ header a {
     font-size: 1rem;
 }
 
+.successIco {
+    color: #6bb927;
+}
+.infoIco {
+    color: #17a2b8;
+}
 .cancelIco {
     color: #ef4056 !important;
 }
