@@ -27,7 +27,7 @@ header a {
 }
 
 .sectionHeader > a {
-    padding: 1rem 0;
+    padding: 1rem 0 .8rem;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -45,10 +45,6 @@ header a {
     margin-right: .4rem;
 }
 
-.sectionHeader > a:hover {
-    background-color: rgba(0,0,0,.05);
-}
-
 .orderActive {
     color: #ef4056 !important;
     border-bottom: 3px #ef4056 solid;
@@ -59,4 +55,33 @@ header a {
     color: white;
     border: none !important;
     border-radius: 5px !important;
+}
+
+.orderShortcut {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.OSstatus {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: .85rem;
+    padding: 1rem 0;
+}
+
+.OSstatus > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.OSstatus > div i {
+    font-size: 1.2rem;
+    color: #6bb927;
+    margin-left: .1rem;
+}
+
+.OSstatus p {
+    margin-right: .5rem;
 }

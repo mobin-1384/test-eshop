@@ -280,8 +280,12 @@ a {
 }
 
 .amazing-offer_slider_item_div div span {
-    font-size: .8rem;
+    font-size: .7rem;
 }
+
+.amazing-offer_slider_item_div > div p:nth-child(2) {
+    font-size: .9rem;
+} 
 
 .amazing-offer_slider_item_div>p {
     text-decoration-line: line-through;
