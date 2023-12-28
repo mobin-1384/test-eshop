@@ -156,6 +156,53 @@ header a {
 .dangerIco {
     color: #ffc107 !important;
 }
+.fa-truck {
+    font-size: 1.1rem !important;
+}
+
+
+
+/* ============ORDER DETAIL============ */
+
+
+.ODdetailSection {
+    width: 100%;
+}
+
+.ODdetailSection > div {
+    padding: 1rem;
+    font-size: .9rem;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.ODdetailSection > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.ODdetailSection > div > div:first-child {
+    margin-top: 0;
+}
+
+.ODdetailAddress {
+    flex-direction: column !important;
+}
+
+.ODdetailAddress p:last-child {
+    margin-top: 1rem;
+    line-height: 25px;
+}
+
+.ODdetailSection > div > div p:first-child {
+    color: rgba(0,0,0,.6);
+}
+
+
+
 
 @media screen and (min-width:500px) {
     section {
