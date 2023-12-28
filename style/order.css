@@ -170,7 +170,7 @@ header a {
 }
 
 .ODdetailSection > div {
-    padding: 1rem;
+    padding: 1rem 2rem;
     font-size: .9rem;
     border-bottom: 1px solid rgba(0,0,0,.1);
     display: flex;
@@ -214,8 +214,8 @@ header a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 1rem;
     border-bottom: 1px solid rgba(0,0,0,.1);
+    justify-content: center;
 }
 
 .DetailOrderItems > div:last-child {
@@ -268,5 +268,10 @@ header a {
         width: 500px;
         border: 1px solid rgba(0,0,0,.05);
         border-top: none;
+    }
+    .ODdetailSection > div {
+        width: 500px;
+        border-right: 1px solid rgba(0,0,0,.1);
+        border-left: 1px solid rgba(0,0,0,.1);
     }
 }
