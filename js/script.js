@@ -5,7 +5,6 @@
 var mainSlider = $('#news-item-slider')
 
 mainSlider.owlCarousel({
-
     rtl: true,
     items: 1,
     loop: true,
@@ -14,7 +13,7 @@ mainSlider.owlCarousel({
     autoplayHoverPause: true,
     dots: true,
     nav: false,
-})
+});
 
 document.getElementsByClassName("owl-prev")[0].innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
 document.getElementsByClassName("owl-next")[0].innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
@@ -30,35 +29,7 @@ splide.mount();
 
 // Best 
 
-var bestSelling = $('.best')
-
-bestSelling.owlCarousel({
-    rtl: true,
-    items: 2,
-    loop: true,
-    autoplay: false,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    dots: true,
-    nav: false,
-    // responsive : {
-    //     0 : {
-    //         items : 2,
-    //     } ,
-    //     800 : {
-    //         items : 3,
-    //     } ,
-    //     1024 : {
-    //         items : 4,
-    //     } ,
-    //     1280 : {
-    //         items : 5,
-    //     } ,
-    //     1500 : {
-    //         items : 6,
-    //     }
-    // },
-})
+// and down 
 
 function beRed(element) {
     // var heart = document.getElementById("addToHeart");
@@ -98,7 +69,7 @@ mainArticleSlider.owlCarousel({
     rtl: true,
     items: 1,
     loop: true,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     dots: true,
@@ -117,7 +88,39 @@ mainArticleSlider.owlCarousel({
     //         items : 5,
     //     }
     // },
-})
+});
 
+// best slider
 
+var bestSelling = $('.best');
 
+bestSelling.owlCarousel({
+    rtl: true,
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    dots: true,
+    nav: false,
+    responsive : {
+        0 : {
+            items : 1,
+        } ,
+        300 : {
+            items : 2,
+        } ,
+        800 : {
+            items : 3,
+        } ,
+        1024 : {
+            items : 4,
+        } ,
+        1280 : {
+            items : 5,
+        } ,
+        1500 : {
+            items : 6,
+        }
+    },
+});
