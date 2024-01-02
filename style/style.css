@@ -368,18 +368,18 @@ a {
 }
 
 .best_price span {
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .best_price p {
-    font-size: .85rem;
+    font-size: .9rem;
 }
 
 .best-item_offer {
     text-decoration: line-through;
     color: #c0c2c5;
     margin-left: .5rem;
-    font-size: .75rem !important;
+    font-size: .8rem !important;
 }
 
 .best_shortDescription {
