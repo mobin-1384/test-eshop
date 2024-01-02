@@ -472,7 +472,7 @@ a {
 }
 
 .main_article-item-caption {
-    padding: 0.6rem 1.2rem;
+    padding: 0.8rem 1.2rem 0.6rem;
     font-size: .8rem;
     line-height: 20px;
     word-spacing: 1px;
@@ -489,10 +489,10 @@ a {
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
-    height: 1.5rem;
+    /* height: 1.5rem; */
     align-items: center;
     color: #333333;
-    padding: .9rem 3rem;
+    padding: .9rem 3rem 0;
     color: #3f4064;
 }
 
@@ -608,7 +608,20 @@ hr {
 
 
 
-
+@media screen and (max-width:410px) {
+    .best_top {
+        height: 17rem;
+    }
+    .best_price {
+        flex-direction: column-reverse;
+    }
+    .best-item_offer {
+        padding-top: .5rem;
+    }
+    .main_article-item-info {
+        padding: .9rem 0 0;
+    }
+}
 
 @media screen and (min-width:800px) {
     /* body {

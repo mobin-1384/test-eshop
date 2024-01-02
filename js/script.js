@@ -36,7 +36,7 @@ bestSelling.owlCarousel({
     rtl: true,
     items: 2,
     loop: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     dots: true,
@@ -51,12 +51,12 @@ bestSelling.owlCarousel({
     //     1024 : {
     //         items : 4,
     //     } ,
-        // 1280 : {
-        //     items : 5,
-        // } ,
-        // 1500 : {
-        //     items : 6,
-        // }
+    //     1280 : {
+    //         items : 5,
+    //     } ,
+    //     1500 : {
+    //         items : 6,
+    //     }
     // },
 })
 
@@ -98,7 +98,7 @@ mainArticleSlider.owlCarousel({
     rtl: true,
     items: 1,
     loop: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     dots: true,
