@@ -585,29 +585,6 @@ hr {
     font-size: 1.1rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width:410px) {
     .best_top {
         height: 17rem;
@@ -620,6 +597,13 @@ hr {
     }
     .main_article-item-info {
         padding: .9rem 0 0;
+    }
+    .best-item a:nth-child(2) i {
+        padding-left: 0;
+        padding-right: .1rem;
+    }
+    .best-item a:nth-child(2) p {
+        display: none;
     }
 }
 
@@ -639,6 +623,10 @@ hr {
 
     .category-item {
         flex-basis: calc(100% / 8);
+    }
+    #main_article_parent {
+        width: 40rem;
+        margin: auto;
     }
 }
 

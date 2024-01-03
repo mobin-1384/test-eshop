@@ -1,17 +1,17 @@
-
 /* ===========MY ORDERS============= */
 
-header > div {
+header>div {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     padding: 1.5rem;
-    border-bottom: 5px solid rgba(0,0,0,.05);
+    border-bottom: 5px solid rgba(0, 0, 0, .05);
 }
 
-header h3 , header a i {
-    color: rgba(0,0,0,.9);
+header h3,
+header a i {
+    color: rgba(0, 0, 0, .9);
     font-size: .9rem;
     font-weight: 400;
 }
@@ -23,10 +23,10 @@ header a {
 .sectionHeader {
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
-.sectionHeader > a {
+.sectionHeader>a {
     padding: 1rem 0 .8rem;
     display: flex;
     flex-direction: row;
@@ -38,8 +38,8 @@ header a {
     align-items: center;
 }
 
-.sectionHeader > a > div {
-    border: 1px solid rgba(0,0,0,.2);
+.sectionHeader>a>div {
+    border: 1px solid rgba(0, 0, 0, .2);
     padding: .2rem .4rem .1rem;
     border-radius: 25px;
     margin-right: .4rem;
@@ -50,7 +50,7 @@ header a {
     border-bottom: 3px #ef4056 solid;
 }
 
-.orderActive div{
+.orderActive div {
     background-color: #ef4056;
     color: white;
     border: none !important;
@@ -61,12 +61,12 @@ header a {
     display: flex;
     flex-direction: column;
     padding: .5rem 1rem;
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
-.OSstatus ,
-.OSsave ,
-.OSprice ,
+.OSstatus,
+.OSsave,
+.OSprice,
 .OSitems {
     display: flex;
     flex-direction: row;
@@ -80,39 +80,39 @@ header a {
     padding-left: 0;
 }
 
-.OSstatus div ,
+.OSstatus div,
 .OSsave div {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 }
 
-.OSstatus div > div {
+.OSstatus div>div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.OSstatus div > div i,
+.OSstatus div>div i,
 .OSsave i {
     font-size: 1.2rem;
     margin-left: .1rem;
 }
 
-.OSstatus p ,
-.OSsave > div p ,
-.OSsave > div p span {
+.OSstatus p,
+.OSsave>div p,
+.OSsave>div p span {
     margin-right: .5rem;
 }
 
-.OSstatus div:nth-child(2) > p ,
-.OSsave > p {
-    color: rgba(0,0,0,.5);
+.OSstatus div:nth-child(2)>p,
+.OSsave>p {
+    color: rgba(0, 0, 0, .5);
 }
 
-.OSstatus div:nth-child(2) > p span ,
-.OSsave > p span {
-    color: rgba(0,0,0,.9);
+.OSstatus div:nth-child(2)>p span,
+.OSsave>p span {
+    color: rgba(0, 0, 0, .9);
 }
 
 .OSitems {
@@ -137,25 +137,29 @@ header a {
 
 .OSprice div p:nth-child(2) span {
     font-size: .8rem;
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
 }
 
-.OSprice > i {
+.OSprice>i {
     font-size: 1rem;
 }
 
 .successIco {
     color: #6bb927;
 }
+
 .infoIco {
     color: #17a2b8;
 }
+
 .cancelIco {
     color: #ef4056 !important;
 }
+
 .dangerIco {
     color: #ffc107 !important;
 }
+
 .fa-truck {
     font-size: 1.1rem !important;
 }
@@ -169,26 +173,26 @@ header a {
     width: 100%;
 }
 
-.ODdetailSection > div {
+.ODdetailSection>div {
     padding: 1rem 2rem;
     font-size: .9rem;
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
     display: flex;
     flex-direction: column;
 }
 
-.ODdetailSection > div:last-child {
+.ODdetailSection>div:last-child {
     border-bottom: none;
 }
 
-.ODdetailSection > div > div {
+.ODdetailSection>div>div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 1.5rem;
 }
 
-.ODdetailSection > div > div:first-child {
+.ODdetailSection>div>div:first-child {
     margin-top: 0;
 }
 
@@ -201,8 +205,8 @@ header a {
     line-height: 25px;
 }
 
-.ODdetailSection > div > div p:first-child {
-    color: rgba(0,0,0,.6);
+.ODdetailSection>div>div p:first-child {
+    color: rgba(0, 0, 0, .6);
 }
 
 .DetailOrderItems {
@@ -210,29 +214,29 @@ header a {
     flex-direction: column !important;
 }
 
-.DetailOrderItems > div {
+.DetailOrderItems>div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
     justify-content: center;
 }
 
-.DetailOrderItems > div:last-child {
+.DetailOrderItems>div:last-child {
     border: none !important;
 }
 
-.DetailOrderItems > div img {
+.DetailOrderItems>div img {
     width: 100px;
 }
 
-.DetailOrderItems > div > div:last-child {
+.DetailOrderItems>div>div:last-child {
     display: flex;
     flex-direction: column;
     padding-right: 1rem;
 }
 
-.DetailOrderItems > div > div:last-child div {
+.DetailOrderItems>div>div:last-child div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -242,11 +246,121 @@ header a {
     line-height: 25px;
     padding-bottom: .5rem;
     font-size: .8rem !important;
-    color: rgba(0,0,0,.9) !important;
+    color: rgba(0, 0, 0, .9) !important;
+}
+
+/* ===========MY FAVORITE============= */
+
+.myFvItems {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.myFvItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: .5rem 0 1.5rem;
+}
+
+.myFvItem--status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.myFvItem--status div:first-child {
+    /* width: 40%; */
+    flex-basis: 30%;
+    object-fit: cover;
+}
+
+.myFvItem--status div:first-child img {
+    width: 100%;
+}
+
+.myFvItem--status div:last-child {
+    flex-basis: 70%;
+}
+
+.myFvItem--status div:last-child h4 {
+    font-weight: 100;
+    font-size: .9rem;
+    padding: 1rem 1.5rem;
+    line-height: 25px;
+}
+
+.myFvItem--price {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: .9rem;
+}
+
+.myFvItem--price span {
+    font-size: .8rem;
+}
+
+.myFvItem--price_offer {
+    margin-left: .5rem;
+    text-decoration: line-through;
+    color: #c0c2c5;
+}
+
+.myFvItem--btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.myFvItem--btn div {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.myFvItem--btn div i {
+    margin-left: .5rem;
+    font-size: 1.1rem;
+}
+
+.myFvItem--btn div:nth-child(1) i,
+.myFvItem--btn div:nth-child(3) i {
+    margin-left: 0;
+}
+
+.myFvItem--btn div:nth-child(1),
+.myFvItem--btn div:nth-child(3){
+    border-color: rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .5);
+    flex-basis: 10%;
+}
+.myFvItem--btn div:nth-child(2){
+    border-color: #e6123d;
+    color: #e6123d;
+    flex-basis: 80%;
+    margin: 0 1rem;
 }
 
 
 
+@media screen and (max-width:370px) {
+    .OSsave,
+    .OSstatus,
+    .OSprice,
+    .OSitems {
+        padding: 1rem 0 0;
+    }
+}
 
 @media screen and (min-width:500px) {
     section {
@@ -254,24 +368,28 @@ header a {
         flex-direction: column;
         align-items: center;
     }
+
     .sectionHeader {
-        border: 1px solid rgba(0,0,0,.05);
+        border: 1px solid rgba(0, 0, 0, .05);
         border-top: 0;
         width: 500px;
     }
+
     #sectionContent {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .orderShortcut {
         width: 500px;
-        border: 1px solid rgba(0,0,0,.05);
+        border: 1px solid rgba(0, 0, 0, .05);
         border-top: none;
     }
-    .ODdetailSection > div {
+
+    .ODdetailSection>div {
         width: 500px;
-        border-right: 1px solid rgba(0,0,0,.1);
-        border-left: 1px solid rgba(0,0,0,.1);
+        border-right: 1px solid rgba(0, 0, 0, .1);
+        border-left: 1px solid rgba(0, 0, 0, .1);
     }
 }
