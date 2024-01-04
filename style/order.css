@@ -319,7 +319,7 @@ header a {
 
 .myFvItem--btn div {
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: .5rem;
     font-size: .8rem;
     display: flex;
