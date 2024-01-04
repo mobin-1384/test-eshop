@@ -393,3 +393,50 @@ header a {
         border-left: 1px solid rgba(0, 0, 0, .1);
     }
 }
+
+@media screen and (min-width:600px) {
+    .myFvItems {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .myFvItem {
+        flex-basis: 50%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .myFvItem:nth-child(odd),
+    .myFvItem:last-child {
+        border-left: 1px solid rgba(0, 0, 0, .1);
+    }
+}
+@media screen and (min-width:1000px) {
+    .myFvItem {
+        flex-basis: 33.33%;
+    }
+    .myFvItem:nth-child(odd) {
+        border-left: none;
+    }
+    .myFvItem:nth-child(3n - 1) {
+        border-left: 1px solid rgba(0, 0, 0, .1);
+        border-right: 1px solid rgba(0, 0, 0, .1);
+    }
+}
+@media screen and (min-width:1500px) {
+    .myFvItem {
+        flex-basis: 25%;
+    }
+    .myFvItem:nth-child(odd) {
+        border-left: none;
+    }
+    .myFvItem:nth-child(3n - 1) {
+        border-left: none;
+        border-right: none;
+    }
+    .myFvItem:nth-child(4n - 1) {
+        border-left: 1px solid rgba(0, 0, 0, .1);
+        border-right: 1px solid rgba(0, 0, 0, .1);
+    }
+    .myFvItem:nth-child(4n - 2) {
+        border-right: 1px solid rgba(0, 0, 0, .1);
+    }
+}
