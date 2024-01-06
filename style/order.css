@@ -251,14 +251,14 @@ header a {
 
 /* ===========MY FAVORITE============= */
 
-.myFvItems {
+.Items {
     width: 100%;
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
 }
 
-.myFvItem {
+.Item {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -266,34 +266,34 @@ header a {
     padding: .5rem 0 1.5rem;
 }
 
-.myFvItem--status {
+.Item--status {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.myFvItem--status div:first-child {
+.Item--status div:first-child {
     /* width: 40%; */
     flex-basis: 30%;
     object-fit: cover;
 }
 
-.myFvItem--status div:first-child img {
+.Item--status div:first-child img {
     width: 100%;
 }
 
-.myFvItem--status div:last-child {
+.Item--status div:last-child {
     flex-basis: 70%;
 }
 
-.myFvItem--status div:last-child h4 {
+.Item--status div:last-child h4 {
     font-weight: 100;
     font-size: .9rem;
     padding: 1rem 1.5rem;
     line-height: 25px;
 }
 
-.myFvItem--price {
+.Item--price {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -301,23 +301,23 @@ header a {
     font-size: .9rem;
 }
 
-.myFvItem--price span {
+.Item--price span {
     font-size: .8rem;
 }
 
-.myFvItem--price_offer {
+.Item--price_offer {
     margin-left: .5rem;
     text-decoration: line-through;
     color: #c0c2c5;
 }
 
-.myFvItem--btn {
+.Item--btn {
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
 }
 
-.myFvItem--btn div {
+.Item--btn div {
     border: 1px solid black;
     border-radius: 5px;
     padding: .5rem;
@@ -326,34 +326,52 @@ header a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    z-index: 5;
 }
 
-.myFvItem--btn div i {
+.Item--btn div i {
     margin-left: .5rem;
     font-size: 1.1rem;
 }
 
-.myFvItem--btn div:nth-child(1) i,
-.myFvItem--btn div:nth-child(3) i {
+.Item--btn div:nth-child(1) i,
+.Item--btn div:nth-child(3) i {
     margin-left: 0;
 }
 
-.myFvItem--btn div:nth-child(1),
-.myFvItem--btn div:nth-child(3){
+.Item--btn div:nth-child(1),
+.Item--btn div:nth-child(3) {
     border-color: rgba(0, 0, 0, .2);
     color: rgba(0, 0, 0, .5);
     flex-basis: 10%;
 }
-.myFvItem--btn div:nth-child(2){
+
+.Item--btn div:nth-child(2) {
     border-color: #e6123d;
     color: #e6123d;
     flex-basis: 80%;
     margin: 0 1rem;
 }
 
+.Item--btn div:first-child:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.Item--btn div:nth-child(2):hover {
+    background-color: #ff325b;
+    color: #fff;
+}
+
+.Item--btn div:last-child:hover {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
 
 
 @media screen and (max-width:370px) {
+
     .OSsave,
     .OSstatus,
     .OSprice,
@@ -395,48 +413,74 @@ header a {
 }
 
 @media screen and (min-width:600px) {
-    .myFvItems {
+    .Items {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .myFvItem {
+
+    .Item {
         flex-basis: 50%;
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    .myFvItem:nth-child(odd),
-    .myFvItem:last-child {
+
+    .Item:nth-child(odd),
+    .Item:last-child {
         border-left: 1px solid rgba(0, 0, 0, .1);
     }
-}
-@media screen and (min-width:1000px) {
-    .myFvItem {
-        flex-basis: 33.33%;
-    }
-    .myFvItem:nth-child(odd) {
+
+    .Item:nth-child(even) {
         border-left: none;
     }
-    .myFvItem:nth-child(3n - 1) {
+}
+
+@media screen and (min-width:1000px) {
+    .Item {
+        flex-basis: 33.33%;
+    }
+
+    .Item:last-child {
+        border-left: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    .Item:nth-child(odd) {
+        border-left: none;
+    }
+
+    .Item:nth-child(3n - 1) {
         border-left: 1px solid rgba(0, 0, 0, .1);
         border-right: 1px solid rgba(0, 0, 0, .1);
     }
 }
+
 @media screen and (min-width:1500px) {
-    .myFvItem {
+    .Item {
         flex-basis: 25%;
     }
-    .myFvItem:nth-child(odd) {
+
+    .Item:nth-child(odd) {
         border-left: none;
     }
-    .myFvItem:nth-child(3n - 1) {
+
+    .Item:nth-child(3n - 1) {
         border-left: none;
         border-right: none;
     }
-    .myFvItem:nth-child(4n - 1) {
+
+    .Item:nth-child(4n - 1) {
         border-left: 1px solid rgba(0, 0, 0, .1);
         border-right: 1px solid rgba(0, 0, 0, .1);
     }
-    .myFvItem:nth-child(4n - 2) {
+
+    .Item:nth-child(4n - 2) {
         border-right: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    .Item:last-child {
+        border-left: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    .Item:nth-child(4n) {
+        border-left: none;
     }
 }
