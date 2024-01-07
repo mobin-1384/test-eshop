@@ -378,14 +378,14 @@ header a {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid #19bfd3;
-    padding: .5rem 0 .3rem;
+    padding: 1rem 0 .4rem;
     margin: 0 1rem;
     align-items: center;
     justify-content: flex-start;
 }
 
 .searchHead input {
-    font-size: .9rem;
+    font-size: 1rem;
     padding: .5rem;
     width: 100%;
     border: none;
@@ -415,7 +415,7 @@ header a {
 }
 
 .searchHead i {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: rgba(0, 0, 0, .8);
 }
 
