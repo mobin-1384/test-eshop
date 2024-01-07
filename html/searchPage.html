@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="http://cdn.font-store.ir/yekan.css" type="text/css">
     <link rel="stylesheet" href="../style/style.css">
     <!-- OUT OF OTHER -->
-    <link rel="stylesheet" href="../style/Alert.css">
     <link rel="stylesheet" href="../style/order.css">
     <!-- / OUT OF OTHER -->
     <link rel="icon" href="../images/icon.jpg" type="image/x-icon">
@@ -25,51 +24,22 @@
 </head>
 
 <body>
-    <div id="alert"></div>
-    <header>
-        <div>
-            <a href="./account.html">
+    <header class="searchHeader">
+        <div class="searchHead">
+            <div>
                 <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <h3>لیست علاقه‌‌مندی</h3>
+            </div>
+            <div>
+                <input id="searchInp" type="text" placeholder="جستجو" onkeyup="searchBox(this)">
+            </div>
+            <div>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
         </div>
     </header>
 
     <section>
-        <div class="Items">
-            <div class="Item">
-                <a href="#" class="Item--status">
-                    <div>
-                        <img src="../images/best_selling2.webp" alt="item">
-                    </div>
-                    <div>
-                        <h4>
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                        </h4>
-                    </div>
-                </a>
-                <div class="Item--price">
-                    <div class="Item--price_offer">
-                        <p>۲۰۰,۰۰۰,۰۰۰</p>
-                    </div>
-                    <div>
-                        <p>۱۵۵,۰۰۰,۰۰۰ <span>تومان</span></p>
-                    </div>
-                </div>
-                <div class="Item--btn">
-                    <div class="deleteItem">
-                        <i class="fa-regular fa-trash-can"></i>
-                    </div>
-                    <div onclick="addToCart(this)" class="addItem">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        <p>افزودن به سبد خرید</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </section>
 
     <footer id="footer">
@@ -118,7 +88,6 @@
     "></script>
 
     <!-- OUT OF OTHER -->
-    <script src="../js/Alert.js"></script>
     <script src="../js/order.js"></script>
     <!-- / OUT OF OTHER -->
 

@@ -24,7 +24,7 @@ a {
     justify-content: center;
 }
 
-#header div {
+#header a {
     background-color: #f0f0f1;
     border: 1px solid white;
     border-radius: 8px;
@@ -36,7 +36,7 @@ a {
     color: #81858b;
 }
 
-#header div p {
+#header a p {
     padding-right: .5rem;
     font-size: .82rem;
 }

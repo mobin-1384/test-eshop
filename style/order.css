@@ -368,7 +368,43 @@ header a {
     color: #fff;
 }
 
+/* ===========SEARCH PAGE============= */
 
+.searchHeader > div {
+    width: auto !important;
+}
+
+.searchHead {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #19bfd3;
+    padding: .5rem 0 .3rem;
+    margin: 0 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchHead input {
+    font-size: .9rem;
+    padding: .5rem;
+    width: 100%;
+    border: none;
+    caret-color: #19bfd3;
+}
+
+.searchHead > div:nth-child(2) {
+    flex-basis: 85%;
+}
+
+#searchInp:focus {
+    border: none !important;
+    outline: none;
+}
+
+.searchHead i {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, .5);
+}
 
 @media screen and (max-width:370px) {
 

@@ -15,8 +15,8 @@ mainSlider.owlCarousel({
     nav: false,
 });
 
-document.getElementsByClassName("owl-prev")[0].innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
-document.getElementsByClassName("owl-next")[0].innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
+// document.getElementsByClassName("owl-prev")[0].innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
+// document.getElementsByClassName("owl-next")[0].innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
 
 // Amazing Offer Slider
 

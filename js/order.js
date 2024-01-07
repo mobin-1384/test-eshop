@@ -12,4 +12,21 @@ if (orderPartHeader != null) {
     }
 }
 
-// ============ MY FAVORITE ============
+// ============ MY ITEMS ============
+
+function addToCart(elem) {
+    console.log(elem);
+    var text = "محصول مورد نظر با موفقیت به سبد خرید اضافه شد !";
+    Alert(5000, "success", text);
+}
+
+// ============= SEARCH PAGE ============
+
+// var searchInp = document.querySelector("#searchInp");
+// searchInp.addEventListener("keydown", function(){
+//     console.log(searchInp.value);
+// })
+
+function searchBox(elem) {
+    console.log(elem.value);
+}
