@@ -381,7 +381,7 @@ header a {
     padding: .5rem 0 .3rem;
     margin: 0 1rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .searchHead input {
@@ -392,8 +392,21 @@ header a {
     caret-color: #19bfd3;
 }
 
+.searchHead > div {
+    flex-basis: 7.5%;
+}
+
+.searchHead > div:hover {
+    cursor: pointer;
+}
+
 .searchHead > div:nth-child(2) {
     flex-basis: 85%;
+}
+
+.searchHead > div:last-child {
+    direction: ltr;
+    display: none;
 }
 
 #searchInp:focus {
@@ -403,7 +416,7 @@ header a {
 
 .searchHead i {
     font-size: 1.1rem;
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .8);
 }
 
 @media screen and (max-width:370px) {

@@ -28,5 +28,14 @@ function addToCart(elem) {
 // })
 
 function searchBox(elem) {
-    console.log(elem.value);
+    if (elem.value != "") {
+        document.querySelector("#cleanSerchBox").style.display = "block";
+    } else {
+        document.querySelector("#cleanSerchBox").style.display = "none";
+    }
+}
+
+function cleanSerchBox(elem) {
+    document.querySelector("#searchInp").value = "";
+    elem.style.display = "none";
 }
