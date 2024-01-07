@@ -433,12 +433,13 @@ header a {
     font-size: .9rem;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     justify-content: space-between;
-
+    align-items: center;
 }
 
 .searchSectionDiv > a > div:first-child {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .searchSectionDiv > a > div:first-child > i {
@@ -447,6 +448,11 @@ header a {
 
 .searchSectionDiv > a i {
     color: rgba(0, 0, 0, .6);
+}
+
+.searchResP {
+    width: 85%;
+    line-height: 25px;
 }
 
 @media screen and (max-width:370px) {
