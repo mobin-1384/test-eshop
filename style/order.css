@@ -467,10 +467,22 @@ header a {
 
 /* ===========CATEGORY PAGE============= */
 
-.catParent {
+.catBody {
     background: rgb(219,226,242);
     background: linear-gradient(342deg, rgba(219,226,242,1) 50%, rgba(119,152,215,1) 100%);
-    padding: 1rem;
+}
+
+.catHeader {
+    background-color: #fff0 !important;
+    border-bottom: none !important;
+}
+
+.catHeader a {
+    margin: .5rem 1rem !important;
+}
+
+.catParent {
+    padding: 0.5rem 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -479,11 +491,13 @@ header a {
 .catItem {
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
     align-items: center;
     background-color: #f9fafd;
     flex-basis: calc(50% - .5rem);
     padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .catItem:nth-child(2n - 1) {
