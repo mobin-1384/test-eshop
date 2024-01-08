@@ -498,6 +498,7 @@ header a {
     margin-bottom: 1rem;
     border-radius: 10px;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 .catItem:nth-child(2n - 1) {
@@ -519,8 +520,9 @@ header a {
 
 .catTitle h3 {
     font-weight: 100;
-    font-size: 1.1rem;
-    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
 }
 
 .catInsideItems {
@@ -531,7 +533,7 @@ header a {
 
 .catInsideItems p {
     margin-bottom: .5rem;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 
