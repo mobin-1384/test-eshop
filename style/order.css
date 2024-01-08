@@ -370,7 +370,7 @@ header a {
 
 /* ===========SEARCH PAGE============= */
 
-.searchHeader > div {
+.searchHeader>div {
     width: auto !important;
 }
 
@@ -392,19 +392,24 @@ header a {
     caret-color: #19bfd3;
 }
 
-.searchHead > div {
+.searchHead>div,
+.searchHead>a {
     flex-basis: 7.5%;
 }
 
-.searchHead > div:hover {
+.searchHead>a {
+    margin-left: 0;
+}
+
+.searchHead>div:hover {
     cursor: pointer;
 }
 
-.searchHead > div:nth-child(2) {
+.searchHead>div:nth-child(2) {
     flex-basis: 85%;
 }
 
-.searchHead > div:last-child {
+.searchHead>div:last-child {
     direction: ltr;
     display: none;
 }
@@ -425,7 +430,7 @@ header a {
     width: 100%;
 }
 
-.searchSectionDiv > a {
+.searchSectionDiv>a {
     display: flex;
     flex-direction: row;
     padding: 1rem 0;
@@ -436,17 +441,22 @@ header a {
     align-items: center;
 }
 
-.searchSectionDiv > a > div:first-child {
+.searchSectionDiv>a:hover {
+    background-color: rgba(0, 0, 0, .02);
+}
+
+.searchSectionDiv>a>div:first-child {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-basis: 95%;
 }
 
-.searchSectionDiv > a > div:first-child > i {
+.searchSectionDiv>a>div:first-child>i {
     margin-left: 1rem;
 }
 
-.searchSectionDiv > a i {
+.searchSectionDiv>a i {
     color: rgba(0, 0, 0, .6);
 }
 
@@ -454,6 +464,71 @@ header a {
     width: 85%;
     line-height: 25px;
 }
+
+/* ===========CATEGORY PAGE============= */
+
+.catParent {
+    background: rgb(219,226,242);
+    background: linear-gradient(342deg, rgba(219,226,242,1) 50%, rgba(119,152,215,1) 100%);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.catItem {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #f9fafd;
+    flex-basis: calc(50% - .5rem);
+    padding: 1rem 0;
+}
+
+.catItem:nth-child(2n - 1) {
+    margin-left: .5rem;
+}
+
+.catItem:nth-child(2n) {
+    margin-right: .5rem;
+}
+
+.catImg {
+    padding: 0 2rem;
+}
+
+.catImg img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.catTitle h3 {
+    font-weight: 100;
+    font-size: 1.1rem;
+    padding: 0 1rem 1rem;
+}
+
+.catInsideItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catInsideItems p {
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:370px) {
 
@@ -516,6 +591,22 @@ header a {
 
     .Item:nth-child(even) {
         border-left: none;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .searchHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .searchHeader>div {
+        width: 800px !important;
+    }
+
+    .searchSectionDiv {
+        width: 800px;
     }
 }
 
