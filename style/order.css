@@ -479,6 +479,7 @@ header a {
 
 .catHeader a {
     margin: .5rem 1rem !important;
+    background-color: #fff !important;
 }
 
 .catParent {
@@ -502,6 +503,11 @@ header a {
     margin: 0 .5rem 1rem;
 }
 
+.catItem:hover {
+    cursor: pointer;
+    background-color: #f9fafd;
+}
+
 .catItem:nth-child(2n - 1) {
     margin-left: .5rem;
 }
@@ -512,6 +518,10 @@ header a {
 
 .catImg {
     padding: 0 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .catImg img {
@@ -619,6 +629,10 @@ header a {
     .catItem {
         flex-basis: calc(25% - 1rem);
     }
+
+    .catBody {
+        height: 100vh;
+    }
 }
 
 @media screen and (min-width:800px) {
@@ -634,10 +648,6 @@ header a {
 
     .searchSectionDiv {
         width: 800px;
-    }
-    
-    .catItem {
-        flex-basis: calc(33.33% - 1rem);
     }
 }
 
@@ -657,6 +667,16 @@ header a {
     .Item:nth-child(3n - 1) {
         border-left: 1px solid rgba(0, 0, 0, .1);
         border-right: 1px solid rgba(0, 0, 0, .1);
+    }
+    
+    .catItem {
+        flex-basis: calc(20% - 1rem);
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .catItem {
+        flex-basis: calc(16.66% - 1rem);
     }
 }
 
@@ -689,5 +709,16 @@ header a {
 
     .Item:nth-child(4n) {
         border-left: none;
+    }
+
+    .catItem {
+        flex-basis: calc(14.28% - 1rem);
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .catItem {
+        flex-basis: calc(12.5% - 1rem);
+        max-width: 222px;
     }
 }
