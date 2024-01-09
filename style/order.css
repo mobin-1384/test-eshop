@@ -468,8 +468,8 @@ header a {
 /* ===========CATEGORY PAGE============= */
 
 .catBody {
-    background: rgb(219,226,242);
-    background: linear-gradient(342deg, rgba(219,226,242,1) 50%, rgba(119,152,215,1) 100%);
+    background: rgb(219, 226, 242);
+    background: linear-gradient(342deg, rgba(219, 226, 242, 1) 50%, rgba(119, 152, 215, 1) 100%);
 }
 
 .catHeader {
@@ -482,7 +482,7 @@ header a {
 }
 
 .catParent {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -492,13 +492,14 @@ header a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f9fafd;
-    flex-basis: calc(50% - .5rem);
+    background-color: #fff;
+    flex-basis: calc(50% - 1rem);
     padding: 1rem 0;
-    margin-bottom: 1rem;
     border-radius: 10px;
     overflow: hidden;
     justify-content: space-between;
+    height: 257px;
+    margin: 0 .5rem 1rem;
 }
 
 .catItem:nth-child(2n - 1) {
@@ -514,7 +515,7 @@ header a {
 }
 
 .catImg img {
-    width: 100%;
+    width: 100px;
     object-fit: contain;
 }
 
@@ -586,6 +587,10 @@ header a {
         border-right: 1px solid rgba(0, 0, 0, .1);
         border-left: 1px solid rgba(0, 0, 0, .1);
     }
+
+    .catItem {
+        flex-basis: calc(33.33% - 1rem);
+    }
 }
 
 @media screen and (min-width:600px) {
@@ -610,6 +615,12 @@ header a {
     }
 }
 
+@media screen and (min-width:700px) {
+    .catItem {
+        flex-basis: calc(25% - 1rem);
+    }
+}
+
 @media screen and (min-width:800px) {
     .searchHeader {
         display: flex;
@@ -623,6 +634,10 @@ header a {
 
     .searchSectionDiv {
         width: 800px;
+    }
+    
+    .catItem {
+        flex-basis: calc(33.33% - 1rem);
     }
 }
 
