@@ -478,7 +478,7 @@ header a {
 }
 
 .catHeader a {
-    margin: .5rem 1rem !important;
+    margin: 1rem 1rem .5rem !important;
     background-color: #fff !important;
 }
 
@@ -501,6 +501,10 @@ header a {
     justify-content: space-between;
     height: 257px;
     margin: 0 .5rem 1rem;
+}
+
+.catItem:first-child {
+    
 }
 
 .catItem:hover {
