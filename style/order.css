@@ -566,10 +566,12 @@ header a {
     margin: 1rem 1rem .7rem;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, .1);
 }
 
 .catHeaderTask h3 {
     font-size: 1rem !important;
+    font-weight: 400;
 }
 
 .catHeaderTask > a {
