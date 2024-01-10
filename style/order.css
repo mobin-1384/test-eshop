@@ -1,6 +1,6 @@
 /* ===========MY ORDERS============= */
 
-header>div {
+header > div:not(.catHeaderTask) {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -503,10 +503,6 @@ header a {
     margin: 0 .5rem 1rem;
 }
 
-.catItem:first-child {
-    
-}
-
 .catItem:hover {
     cursor: pointer;
     background-color: #f9fafd;
@@ -535,7 +531,7 @@ header a {
 
 .catTitle h3 {
     font-weight: 100;
-    font-size: 1rem;
+    font-size: .9rem;
     padding: 1rem;
     text-align: center;
 }
@@ -549,6 +545,42 @@ header a {
 .catInsideItems p {
     margin-bottom: .5rem;
     font-size: .8rem;
+}
+
+/* PRODUCT CATEGORIES */
+
+.categorySecond {
+    padding: .7rem .5rem .5rem !important;
+}
+
+.categorySecond > a {
+    height: 183px !important;
+}
+
+.catHeaderTask {
+    width: auto;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    margin: 1rem 1rem .7rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catHeaderTask h3 {
+    font-size: 1rem !important;
+}
+
+.catHeaderTask > a {
+    padding: 1rem 1rem .7rem !important;
+    margin: 0 !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.catHeaderTask > a > i {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, .8);
 }
 
 

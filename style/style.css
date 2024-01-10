@@ -24,7 +24,7 @@ a {
     justify-content: center;
 }
 
-#header a {
+#header a:not(.catHeaderTask a) {
     background-color: #f0f0f1;
     border: 1px solid white;
     border-radius: 8px;
