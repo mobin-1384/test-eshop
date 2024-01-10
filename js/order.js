@@ -39,3 +39,14 @@ function cleanSerchBox(elem) {
     document.querySelector("#searchInp").value = "";
     elem.style.display = "none";
 }
+
+function beRed(element) {
+    // var heart = document.getElementById("addToHeart");
+    if (element.classList[1] != "heartActive") {
+        element.innerHTML = '<i class="fa-solid fa-heart"></i>';
+        element.classList.add("heartActive");
+    } else {
+        element.innerHTML = '<i class="fa-regular fa-heart"></i>';
+        element.classList.remove("heartActive");
+    }
+}

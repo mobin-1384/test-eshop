@@ -1,6 +1,6 @@
 /* ===========MY ORDERS============= */
 
-header > div:not(.catHeaderTask) {
+header>div:not(.catHeaderTask) {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -317,7 +317,8 @@ header a {
     margin-top: 1rem;
 }
 
-.Item--btn div {
+.Item--btn div,
+.Item--btn a {
     border: 1px solid black;
     border-radius: 5px;
     padding: .5rem;
@@ -329,18 +330,19 @@ header a {
     z-index: 5;
 }
 
-.Item--btn div i {
+.Item--btn div i,
+.Item--btn a i {
     margin-left: .5rem;
     font-size: 1.1rem;
 }
 
 .Item--btn div:nth-child(1) i,
-.Item--btn div:nth-child(3) i {
+.Item--btn a i {
     margin-left: 0;
 }
 
 .Item--btn div:nth-child(1),
-.Item--btn div:nth-child(3) {
+.Item--btn a {
     border-color: rgba(0, 0, 0, .2);
     color: rgba(0, 0, 0, .5);
     flex-basis: 10%;
@@ -356,16 +358,19 @@ header a {
 .Item--btn div:first-child:hover {
     background-color: #dc3545;
     color: #fff;
+    cursor: pointer;
 }
 
 .Item--btn div:nth-child(2):hover {
     background-color: #ff325b;
     color: #fff;
+    cursor: pointer;
 }
 
-.Item--btn div:last-child:hover {
+.Item--btn a:hover {
     background-color: #17a2b8;
     color: #fff;
+    cursor: pointer;
 }
 
 /* ===========SEARCH PAGE============= */
@@ -553,7 +558,7 @@ header a {
     padding: .7rem .5rem .5rem !important;
 }
 
-.categorySecond > a {
+.categorySecond>a {
     height: 183px !important;
 }
 
@@ -574,16 +579,32 @@ header a {
     font-weight: 400;
 }
 
-.catHeaderTask > a {
+.catHeaderTask>a {
     padding: 1rem 1rem .7rem !important;
     margin: 0 !important;
     background-color: rgba(0, 0, 0, 0) !important;
 }
 
-.catHeaderTask > a > i {
+.catHeaderTask>a>i {
     font-size: 1rem;
     color: rgba(0, 0, 0, .8);
 }
+
+/* PRODUCTS */
+
+.loveItem,
+.itemDetail {
+    border: none !important;
+    color: rgba(0, 0, 0, .9) !important;
+}
+
+.loveItem:hover,
+.itemDetail:hover {
+    background-color: #fff !important;
+    color: rgba(0, 0, 0, .9) !important;
+}
+
+
 
 
 
@@ -706,7 +727,7 @@ header a {
         border-left: 1px solid rgba(0, 0, 0, .1);
         border-right: 1px solid rgba(0, 0, 0, .1);
     }
-    
+
     .catItem {
         flex-basis: calc(20% - 1rem);
     }
