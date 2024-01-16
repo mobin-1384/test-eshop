@@ -233,7 +233,7 @@ header a {
 .DetailOrderItems>div>div:last-child {
     display: flex;
     flex-direction: column;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
     flex-grow: 1;
 }
 
@@ -621,6 +621,7 @@ header a {
 
 .cartItemCalc {
     flex-direction: column !important;
+    padding-top: .5rem;
 }
 
 .cartItemCalc>div {
