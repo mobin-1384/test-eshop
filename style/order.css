@@ -660,6 +660,10 @@ header a {
     color: #e6123d;
 }
 
+.deleteItem:hover {
+    color: #be0026;
+}
+
 
 
 
