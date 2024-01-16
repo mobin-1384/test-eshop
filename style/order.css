@@ -671,10 +671,9 @@ header a {
 .PageEmptyError>div{
     border: 1px solid rgba(0, 0, 0, .1);
     padding: 1rem;
-    display: flex;
-    flex-direction: row;
     justify-content: center !important;
     background-color: rgb(255, 193, 7, .2);
+    border-radius: 5px;
 }
 
 .PageEmptyError>div>p {
