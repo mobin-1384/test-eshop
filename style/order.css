@@ -685,7 +685,7 @@ header a {
 .finalize {
     flex-direction: row !important;
     justify-content: center !important;
-    border-bottom: none !important;
+    border: none !important;
 }
 
 .finalize>a {
@@ -693,17 +693,25 @@ header a {
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 3px;
     padding: 1rem;
-    background-color: #38ca62;
+    background-color: #17a2b8;
     text-align: center;
 }
 
 .finalize>a:hover {
-    background-color: #2eb353;
+    background-color: #118597;
 }
 
 .finalize>a>p {
     font-size: .9rem;
     color: #fff !important;
+}
+
+.CartCompleteBtn {
+    background-color: #38ca62 !important;
+}
+
+.CartCompleteBtn:hover {
+    background-color: #2eb353 !important;
 }
 
 
