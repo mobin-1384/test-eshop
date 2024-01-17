@@ -678,6 +678,32 @@ header a {
 
 .PageEmptyError>div>p {
     color: rgba(0, 0, 0, .6) !important;
+    text-align: center;
+    line-height: 25px;
+}
+
+.finalize {
+    flex-direction: row !important;
+    justify-content: center !important;
+    border-bottom: none !important;
+}
+
+.finalize>a {
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    padding: 1rem;
+    background-color: #38ca62;
+    text-align: center;
+}
+
+.finalize>a:hover {
+    background-color: #2eb353;
+}
+
+.finalize>a>p {
+    font-size: .9rem;
+    color: #fff !important;
 }
 
 
