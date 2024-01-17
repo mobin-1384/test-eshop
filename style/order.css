@@ -653,14 +653,14 @@ header a {
     position: relative;
 }
 
-.deleteItem {
+.cartDeleteItem {
     position: absolute;
     top: 0;
     right: 0;
     color: #e6123d;
 }
 
-.deleteItem:hover {
+.cartDeleteItem:hover {
     color: #be0026;
 }
 
@@ -712,6 +712,12 @@ header a {
 
 .CartCompleteBtn:hover {
     background-color: #2eb353 !important;
+}
+
+.vazirfont {
+    font-family: Vazirmatn FD;
+    font-weight: 400;
+    font-size: .9rem;
 }
 
 
