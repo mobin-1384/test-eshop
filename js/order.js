@@ -78,3 +78,5 @@ function minusItem(elem) {
 function deleteItemBtn(elem) {
     elem.parentNode.parentNode.remove();
 }
+
+

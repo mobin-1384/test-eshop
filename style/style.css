@@ -12,6 +12,14 @@ a {
     font-size: 1rem
 }
 
+.persianNumber {
+    font-family: Vazirmatn FD !important;
+}
+
+/* 
+    <link rel="stylesheet" href="../fonts/Farsi-Digits/Vazirmatn-FD-font-face.css">
+*/
+
 /* Header */
 
 #header {
@@ -89,17 +97,19 @@ a {
 }
 
 #categories {
+    width: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 1rem;
+    justify-content: center;
 }
 
 .category-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 25%;
+    flex-basis: calc(100% / 3);
     margin-top: 1.2rem;
 }
 
@@ -283,9 +293,9 @@ a {
     font-size: .7rem;
 }
 
-.amazing-offer_slider_item_div > div p:nth-child(2) {
+.amazing-offer_slider_item_div>div p:nth-child(2) {
     font-size: .9rem;
-} 
+}
 
 .amazing-offer_slider_item_div>p {
     text-decoration-line: line-through;
@@ -589,21 +599,44 @@ hr {
     .best_top {
         height: 17rem;
     }
+
     .best_price {
         flex-direction: column-reverse;
     }
+
     .best-item_offer {
         padding-top: .5rem;
     }
+
     .main_article-item-info {
         padding: .9rem 0 0;
     }
+
     .best-item a:nth-child(2) i {
         padding-left: 0;
         padding-right: .1rem;
     }
+
     .best-item a:nth-child(2) p {
         display: none;
+    }
+}
+
+@media screen and (min-width:400px) {
+    .category-item {
+        flex-basis: calc(100% / 4);
+    }
+}
+
+@media screen and (min-width:500px) {
+    .category-item {
+        flex-basis: calc(100% / 5);
+    }
+}
+
+@media screen and (min-width:700px) {
+    .category-item {
+        flex-basis: calc(100% / 6);
     }
 }
 
@@ -617,22 +650,31 @@ hr {
     } */
 
     #categories {
-        width: 720px;
+        width: 90%;
         /* flex-wrap: nowrap; */
     }
 
     .category-item {
         flex-basis: calc(100% / 8);
     }
+
     #main_article_parent {
         width: 40rem;
         margin: auto;
     }
+    
+    .category-item p {
+        font-size: .9rem;
+    }
 }
 
-/* @media screen and (min-width:1280px) {
-
-} */
+@media screen and (min-width:1000px) {
+    .category-item div {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50px;
+    }
+}
 
 /* @media screen and (min-width:1024px) {
     body {
