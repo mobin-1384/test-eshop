@@ -720,7 +720,7 @@ header a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
     align-items: center;
 }
 
@@ -732,7 +732,7 @@ header a {
 
 .productDetailHeader i {
     font-size: 1.2rem;
-    color: rgba(0, 0, 0, .8);
+    color: rgba(0, 0, 0, .7);
 }
 
 .productDetailHeader>div>a {
@@ -764,6 +764,7 @@ header a {
     padding: 1rem;
     justify-content: space-between;
     height: auto !important;
+    border-top-width: 1px !important;
 }
 
 .pDetailFooter>a {
