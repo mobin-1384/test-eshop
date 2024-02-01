@@ -739,9 +739,10 @@ header a {
     margin-left: 1rem;
 }
 
-.productDetailHeader>div>a:hover>i {
-    color: rgba(0, 0, 0, .6);
+.productDetailHeader>div>a:hover {
+    cursor: pointer;
 }
+
 
 .productDetailHeader>div:last-child>a:first-child {
     margin-left: 1.5rem;
