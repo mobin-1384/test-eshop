@@ -732,7 +732,7 @@ header a {
 
 .productDetailHeader i {
     font-size: 1.2rem;
-    color: rgba(0, 0, 0, .7);
+    color: rgba(0, 0, 0, .8);
 }
 
 .productDetailHeader>div>a {
@@ -765,7 +765,7 @@ header a {
     padding: 1rem;
     justify-content: space-between;
     height: auto !important;
-    border-top-width: 1px !important;
+    /* border-top-width: 1px !important; */
 }
 
 .pDetailFooter>a {
