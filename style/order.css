@@ -843,23 +843,33 @@ header a {
 }
 
 .productOption {
-    margin: 1rem 0;
-    display: flex;
-    flex-direction: row;
+    margin: 1rem 1.1rem;
 }
 
-.productOption>p {
+.productOption::marker {
+    color: #a1a3a8;
     font-size: .8rem;
 }
 
-.productOption>p:first-child {
+.productOption>div {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 2px;
+    top: -2px;
+}
+
+.productOption>div>p {
+    font-size: .8rem;
+}
+
+.productOption>div>p:first-child {
     color: #a1a3a8;
 }
 
-.productOption>p:last-child {
-    margin-right: 1rem;
+.productOption>div>p:last-child {
+    margin-right: .5rem;
 }
-
 
 
 
