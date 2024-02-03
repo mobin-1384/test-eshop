@@ -839,6 +839,7 @@ header a {
 
 .pdOptions > p {
     font-size: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .productOption {
@@ -848,7 +849,7 @@ header a {
 }
 
 .productOption>p {
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .productOption>p:first-child {
