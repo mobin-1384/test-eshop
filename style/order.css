@@ -807,7 +807,7 @@ header a {
 .pdTitle {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid #00BCD4;
     margin: 1rem 1.5rem 1.5rem;
     padding-bottom: 1.5rem;
 }
@@ -855,7 +855,7 @@ header a {
     display: flex;
     flex-direction: row;
     position: relative;
-    left: 2px;
+    left: 0px;
     top: -2px;
 }
 
