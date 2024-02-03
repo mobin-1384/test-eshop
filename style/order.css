@@ -811,12 +811,12 @@ header a {
 }
 
 .pdTitle>div:first-child {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .pdTitle>div:first-child>a {
     color: #19bfd3;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .pdTitle>div:first-child>span {
@@ -827,9 +827,34 @@ header a {
 
 .pdTitle>div:last-child>h3 {
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 35px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
