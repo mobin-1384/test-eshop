@@ -765,7 +765,6 @@ header a {
     padding: 1rem;
     justify-content: space-between;
     height: auto !important;
-    /* border-top-width: 1px !important; */
 }
 
 .pDetailFooter>a {
@@ -780,6 +779,30 @@ header a {
     font-size: .8rem;
 }
 
+.pdPic {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pdPicItem {
+    width: 50%;
+    margin: 0 auto 1.5rem;
+    max-height: 13rem;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background-color: #bdc1c7;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: #FC6736;
+}
+
+/* .pdPicItem>img {
+    width: 10rem;
+} */
 
 
 

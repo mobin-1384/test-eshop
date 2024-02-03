@@ -40,7 +40,7 @@ function cleanSerchBox(elem) {
     elem.style.display = "none";
 }
 
-// PRODUCTS
+// ============= PRODUCTS ============
 
 function beRed(element) {
     // var heart = document.getElementById("addToHeart");
@@ -53,7 +53,7 @@ function beRed(element) {
     }
 }
 
-// CART
+// ============= CART ============
 
 function plusItem(elem) {
     var quantityIndicator = elem.nextElementSibling;
@@ -79,4 +79,15 @@ function deleteItemBtn(elem) {
     elem.parentNode.parentNode.remove();
 }
 
+// ============= PRODUCT DETAIL PAGE ============
 
+var bestSelling = $('.pdPic');
+
+bestSelling.owlCarousel({
+    rtl: true,
+    items: 1,
+    loop: true,
+    autoplay: false,
+    dots: true,
+    nav: false,
+});
