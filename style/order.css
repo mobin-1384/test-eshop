@@ -808,7 +808,7 @@ header a {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #00BCD4;
-    margin: 1rem 1.5rem;
+    margin: 1rem 1.5rem 0;
     padding-bottom: 1rem;
 }
 
@@ -834,13 +834,9 @@ header a {
 }
 
 .pdOptions {
-    margin: 0 1.5rem 1rem;
-    padding: .5rem;
+    margin: 0 1.5rem;
+    padding: 1.5rem .5rem .5rem;
     border-bottom: 1px solid #00BCD4;
-}
-
-.pdOptions:last-child {
-    border-bottom: none;
 }
 
 .pdOptions > p {
@@ -877,6 +873,27 @@ header a {
     margin-right: .5rem;
 }
 
+.productOptionHidden {
+    padding: 1rem;
+    border-right: 1px solid #00BCD4;
+    border-left: 1px solid #00BCD4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.productOptionHidden>i {
+    color: rgba(0, 0, 0, .7);
+}
+
+.productOptionHidden>p {
+    margin-bottom: 0;
+}
+
+.productOptionHidden>ul {
+    display: none;
+}
+
 
 
 
@@ -910,7 +927,7 @@ header a {
 }
 
 @media screen and (min-width:500px) {
-    section {
+    section:not(.PDSection) {
         display: flex;
         flex-direction: column;
         align-items: center;
