@@ -91,3 +91,8 @@ bestSelling.owlCarousel({
     dots: true,
     nav: false,
 });
+
+function showMoreDetail (elem) {
+    elem.classList.remove("productOptionHidden");
+    elem.children[1].style.display="none";
+}

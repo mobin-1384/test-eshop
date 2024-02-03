@@ -883,7 +883,7 @@ header a {
 }
 
 .productOptionHidden>i {
-    color: rgba(0, 0, 0, .7);
+    color: #00BCD4;
 }
 
 .productOptionHidden>p {
