@@ -789,20 +789,47 @@ header a {
 .pdPicItem {
     width: 50%;
     margin: 0 auto 1.5rem;
+}
+
+.pdPicItem>img {
     max-height: 13rem;
+    object-fit: contain;
 }
 
 .owl-theme .owl-dots .owl-dot span {
-    background-color: #bdc1c7;
+    background-color: #d2e2e6;
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-    background-color: #FC6736;
+    background-color: #00858a;
 }
 
-/* .pdPicItem>img {
-    width: 10rem;
-} */
+.pdTitle {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1.5rem;
+}
+
+.pdTitle>div:first-child {
+    margin-bottom: 1rem;
+}
+
+.pdTitle>div:first-child>a {
+    color: #19bfd3;
+    font-size: .9rem;
+}
+
+.pdTitle>div:first-child>span {
+    color: rgba(0, 0, 0, .4);
+    margin: 0 .2rem;
+    font-size: .8rem;
+} 
+
+.pdTitle>div:last-child>h3 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 35px;
+}
 
 
 
