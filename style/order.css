@@ -808,7 +808,7 @@ header a {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #00BCD4;
-    margin: 1rem 1.5rem 1rem;
+    margin: 1rem 1.5rem;
     padding-bottom: 1rem;
 }
 
@@ -834,7 +834,13 @@ header a {
 }
 
 .pdOptions {
-    margin: 0 1.5rem;
+    margin: 0 1.5rem 1rem;
+    padding: .5rem;
+    border-bottom: 1px solid #00BCD4;
+}
+
+.pdOptions:last-child {
+    border-bottom: none;
 }
 
 .pdOptions > p {
