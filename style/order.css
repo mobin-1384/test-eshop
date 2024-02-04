@@ -944,6 +944,11 @@ header a {
 
 .productDetailHr {
     width: calc(100% - 3rem);
+    margin-top: 2.5rem;
+}
+
+.productDetailHr:first-child {
+    margin-top: 2rem !important;
 }
 
 .related-item {
@@ -954,6 +959,15 @@ header a {
     padding: 1rem 1.5rem 1rem 1rem;
 }
 
+.related-item .owl-dots {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+}
+
+.related-item .owl-dots .active span {
+    background-color: #ff00ee !important;
+}
 
 
 
@@ -967,8 +981,16 @@ header a {
 
 
 
+@media screen and (max-width:410px) {
+    .best-item a:nth-child(2) i {
+        padding-left: .2rem;
+        padding-right: 0;
+    }
 
-
+    .best-item a:nth-child(2) p {
+        display: block !important;
+    }
+}
 
 @media screen and (max-width:500px) {
 

@@ -109,9 +109,9 @@ function closeMoreDetail(elem) {
     }, 10);
 }
 
-var bestSelling = $('.best');
+var bestRelated = $('.bestRelated');
 
-bestSelling.owlCarousel({
+bestRelated.owlCarousel({
     rtl: true,
     items: 1,
     loop: true,
@@ -124,7 +124,7 @@ bestSelling.owlCarousel({
         0 : {
             items : 1,
         } ,
-        300 : {
+        440 : {
             items : 2,
         } ,
         800 : {
