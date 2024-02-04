@@ -929,9 +929,14 @@ header a {
     font-size: .9rem;
     color: #c0c2c5;
     text-decoration-line: line-through;
+    margin-top: .2rem;
 }
 
-
+.pdPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
@@ -977,6 +982,14 @@ header a {
 
     .catItem {
         flex-basis: calc(33.33% - 1rem);
+    }
+
+    .pdPrice {
+        flex-direction: row-reverse;
+    }
+
+    .pdOfferPrice {
+        margin: .5rem;
     }
 }
 
