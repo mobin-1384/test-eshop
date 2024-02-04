@@ -105,7 +105,7 @@ function closeMoreDetail(elem) {
     elem.style.display = "none";
     elem.parentNode.nextElementSibling.style.display = "block";
     setTimeout(() => {
-        elem.parentNode.parentNode.setAttribute("onclick","showMoreDetail(this)");
+        elem.parentNode.parentNode.setAttribute("onclick", "showMoreDetail(this)");
     }, 10);
 }
 
@@ -120,24 +120,49 @@ bestRelated.owlCarousel({
     autoplayHoverPause: true,
     dots: true,
     nav: false,
-    responsive : {
-        0 : {
-            items : 1,
-        } ,
-        440 : {
-            items : 2,
-        } ,
-        800 : {
-            items : 3,
-        } ,
-        1024 : {
-            items : 4,
-        } ,
-        1280 : {
-            items : 5,
-        } ,
-        1500 : {
-            items : 6,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        440: {
+            items: 2,
+        },
+        800: {
+            items: 3,
+        },
+        1024: {
+            items: 4,
+        },
+        1280: {
+            items: 5,
+        },
+        1500: {
+            items: 6,
         }
     },
 });
+
+function showDes(element) {
+    var bestItem = element.parentElement.parentElement;
+    var bestTop = bestItem.children[0];
+    if (element.classList != "activeBar") {
+        element.classList.add("activeBar");
+        element.innerHTML = '<i class="fa-solid fa-bars-staggered"></i>';
+        bestTop.children[0].style.display = "none";
+        bestTop.children[1].style.display = "none";
+        bestTop.children[2].style.display = "block";
+        setTimeout(showDes, 20000, element);
+    } else {
+        element.classList.remove("activeBar");
+        element.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        bestTop.children[0].style.display = "flex";
+        bestTop.children[1].style.display = "flex";
+        bestTop.children[2].style.display = "none";
+    }
+}
+
+// ============= COMMENTS ============
+
+function newComment(elem) {
+    console.log(elem);
+}

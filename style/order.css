@@ -901,6 +901,7 @@ header a {
 
 .productOptionHidden:hover {
     cursor: pointer;
+    background-color: rgba(0, 188, 212, .1);
 }
 
 .productOptionHidden>i {
@@ -944,11 +945,11 @@ header a {
 
 .productDetailHr {
     width: calc(100% - 3rem);
-    margin-top: 2.5rem;
+    margin-top: 3rem;
 }
 
-.productDetailHr:first-child {
-    margin-top: 2rem !important;
+.firstProductDetailHr {
+    margin-top: 2.5rem;
 }
 
 .related-item {
@@ -967,6 +968,30 @@ header a {
 
 .related-item .owl-dots .active span {
     background-color: #ff00ee !important;
+}
+
+.CommentItem {
+    padding: 1rem 1.5rem;
+}
+
+.newComment {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #00BCD4;
+    border-radius: 5px;
+    font-size: .9rem;
+    justify-content: space-between;
+}
+
+.newComment:hover {
+    cursor: pointer;
+    background-color: rgba(0, 188, 212, .1);
+}
+
+.newComment i {
+    color: #00BCD4;
 }
 
 
