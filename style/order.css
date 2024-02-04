@@ -824,7 +824,7 @@ header a {
     color: rgba(0, 0, 0, .4);
     margin: 0 .2rem;
     font-size: .8rem;
-} 
+}
 
 .pdTitle>div:last-child>h3 {
     font-weight: 400;
@@ -838,7 +838,7 @@ header a {
     border-top: 1px solid #00BCD4;
 }
 
-.pdOptions > p {
+.pdOptions>p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
     position: relative;
@@ -892,6 +892,7 @@ header a {
     flex-direction: row;
     justify-content: space-between;
     border-radius: 5px;
+    margin-bottom: 1.5rem;
 }
 
 .productOptionHidden:hover {
@@ -910,6 +911,19 @@ header a {
     display: none;
 }
 
+.productOptionHidden>div {
+    display: none;
+}
+
+.PDdescription {
+    margin-bottom: 1rem;
+}
+
+.PDdescription > p {
+    color: rgba(0, 0, 0, .8);
+    font-size: .9rem;
+    line-height: 25px;
+}
 
 
 
