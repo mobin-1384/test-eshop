@@ -313,7 +313,7 @@ a {
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    padding: 1rem .5rem;
+    padding: 1rem 1rem 1rem .5rem;
     width: 100%;
     margin-bottom: 3rem;
 }
@@ -378,7 +378,7 @@ a {
 }
 
 .best_price span {
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 .best_price p {

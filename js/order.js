@@ -108,3 +108,36 @@ function closeMoreDetail(elem) {
         elem.parentNode.parentNode.setAttribute("onclick","showMoreDetail(this)");
     }, 10);
 }
+
+var bestSelling = $('.best');
+
+bestSelling.owlCarousel({
+    rtl: true,
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    dots: true,
+    nav: false,
+    responsive : {
+        0 : {
+            items : 1,
+        } ,
+        300 : {
+            items : 2,
+        } ,
+        800 : {
+            items : 3,
+        } ,
+        1024 : {
+            items : 4,
+        } ,
+        1280 : {
+            items : 5,
+        } ,
+        1500 : {
+            items : 6,
+        }
+    },
+});

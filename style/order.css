@@ -716,6 +716,10 @@ header a {
 
 /* PRODUCT DETAIL */
 
+.productDetailBody {
+    padding-bottom: 15rem;
+}
+
 .productDetailHeader {
     display: flex;
     flex-direction: row;
@@ -938,7 +942,17 @@ header a {
     align-items: center;
 }
 
+.productDetailHr {
+    width: calc(100% - 3rem);
+}
 
+.related-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 1rem 1.5rem 1rem 1rem;
+}
 
 
 
