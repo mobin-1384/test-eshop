@@ -92,7 +92,19 @@ bestSelling.owlCarousel({
     nav: false,
 });
 
-function showMoreDetail (elem) {
+
+function showMoreDetail(elem) {
     elem.classList.remove("productOptionHidden");
-    elem.children[1].style.display="none";
+    elem.children[1].style.display = "none";
+    elem.children[0].children[0].style.display = "inline";
+    elem.removeAttribute("onclick");
+}
+
+function closeMoreDetail(elem) {
+    elem.parentNode.parentNode.classList.add("productOptionHidden");
+    elem.style.display = "none";
+    elem.parentNode.nextElementSibling.style.display = "block";
+    setTimeout(() => {
+        elem.parentNode.parentNode.setAttribute("onclick","showMoreDetail(this)");
+    }, 10);
 }
