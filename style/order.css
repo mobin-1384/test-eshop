@@ -717,7 +717,7 @@ header a {
 /* PRODUCT DETAIL */
 
 .productDetailBody {
-    padding-bottom: 15rem;
+    padding-bottom: 5rem;
 }
 
 .productDetailHeader {
@@ -1124,6 +1124,15 @@ header a {
     margin: 0;
     font-size: .8rem;
     padding: .5rem 1rem;
+}
+
+.commentReply {
+    width: 85%;
+    margin-right: auto;
+}
+
+.commentReply .commentText {
+    margin-bottom: 0;
 }
 
 
