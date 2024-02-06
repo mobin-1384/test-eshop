@@ -164,5 +164,21 @@ function showDes(element) {
 // ============= COMMENTS ============
 
 function newComment(elem) {
-    console.log(elem);
+    elem.children[0].children[1].classList.add("BtnDeActive");
+    elem.children[0].children[2].classList.remove("BtnDeActive");
+    elem.removeAttribute("onclick");
+    document.querySelector("#newCommentForm").style.display = "flex";
+    elem.children[0].children[0].innerHTML = "نظر خود را بنویسید !"
+    elem.classList.remove("newCommentHover");
+}
+
+function closeNewComment(elem) {
+    elem.previousElementSibling.classList.remove("BtnDeActive");
+    elem.classList.add("BtnDeActive");
+    document.querySelector("#newCommentForm").style.display = "none";
+    setTimeout(() => {
+        elem.parentElement.parentElement.setAttribute("onclick", "newComment(this)");
+        elem.parentElement.parentElement.classList.add("newCommentHover");
+    }, 10);
+    elem.previousElementSibling.previousElementSibling.innerHTML = "ثبت نظر جدید";
 }

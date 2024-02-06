@@ -975,17 +975,22 @@ header a {
 }
 
 .newComment {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 1rem;
     border: 1px solid #00BCD4;
+    width: 100%;
     border-radius: 5px;
     font-size: .9rem;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 }
 
-.newComment:hover {
+.newComment>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.newCommentHover:hover {
     cursor: pointer;
     background-color: rgba(0, 188, 212, .1);
 }
@@ -993,10 +998,65 @@ header a {
 .newComment i {
     color: #00BCD4;
 }
+.newComment i:last-child {
+    color: #ef4056;
+}
 
+.newComment i:last-child:hover {
+    cursor: pointer;
+    color: #ff8d9d;
+}
 
+.BtnDeActive {
+    display: none;
+}
 
+#newCommentForm {
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 0;
+}
 
+#newCommentForm button {
+    border: none;
+    outline: none;
+    background-color: #38ca62;
+    color: white;
+    border-radius: 3px;
+    padding: 0.6rem 1.3rem;
+    margin: 0.3rem auto;
+}
+
+#newCommentForm button:hover {
+    cursor: pointer;
+    background-color: #2eb353;
+}
+
+#newCommentForm textarea {
+    max-width: 100%;
+    min-width: 100%;
+    height: 10rem;
+    width: 100%;
+    outline: none;
+    font-size: .9em;
+    margin: 10px 0 15px;
+    padding: 12px;
+    border-radius: 3px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgba(0, 0, 0, .05);
+    line-height: 20px;
+}
+
+#newCommentForm textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: inset 2px 2px #50c8ff, inset -2px -2px #0095da;
+}
+
+#newCommentForm textarea:hover {
+    background-color: rgb(247, 247, 247);
+    box-shadow: inset 2px 2px #50c8ff, inset -2px -2px #0095da;
+}
 
 
 

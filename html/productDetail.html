@@ -134,7 +134,7 @@
         <div onclick="showMoreDetail(this)" class="pdOptions productOptionHidden">
             <p>معرفی<span onclick="closeMoreDetail(this)" class="hiddenPDIcon"><i
                         class="fa-solid fa-down-left-and-up-right-to-center"></i></span></p>
-            <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+            <i class="fa-solid fa-angle-left"></i>
             <div class="PDdescription">
                 <p>
                     لپ تاپ ایسوس ROG Strix SCAR 18 G834JY-N5049 یکی از قدرتمندترین لپ‌تاپ‌های حاضر در بازار است و به
@@ -149,7 +149,7 @@
         <div onclick="showMoreDetail(this)" class="pdOptions productOptionHidden">
             <p>مشخصات فنی<span onclick="closeMoreDetail(this)" class="hiddenPDIcon"><i
                         class="fa-solid fa-down-left-and-up-right-to-center"></i></span></p>
-            <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+            <i class="fa-solid fa-angle-left"></i>
             <ul class="productOptions">
                 <li class="productOption">
                     <div>
@@ -511,9 +511,17 @@
         <hr class="productDetailHr">
         <div class="related-item CommentItem">
             <h4 class="h4-title">نظرات</h4>
-            <div class="newComment" onclick="newComment(this)">
-                <p>ثبت نظر جدید</p>
-                <i class="fa-solid fa-plus"></i>
+            <div class="newComment newCommentHover" onclick="newComment(this)">
+                <div>
+                    <p>ثبت نظر جدید</p>
+                    <i class="fa-solid fa-plus"></i>
+                    <i onclick="closeNewComment(this)"
+                        class="fa-solid fa-down-left-and-up-right-to-center BtnDeActive"></i>
+                </div>
+                <form id="newCommentForm" action="#">
+                    <textarea name="cmtText" id="cmtText"></textarea>
+                    <button type="submit">ثبت</button>
+                </form>
             </div>
             <!-- <div class="comments">
                 <div class="comment">
