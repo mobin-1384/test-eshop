@@ -924,7 +924,7 @@ header a {
     margin-bottom: 1rem;
 }
 
-.PDdescription > p {
+.PDdescription>p {
     color: rgba(0, 0, 0, .8);
     font-size: .9rem;
     line-height: 30px;
@@ -998,6 +998,7 @@ header a {
 .newComment i {
     color: #00BCD4;
 }
+
 .newComment i:last-child {
     color: #ef4056;
 }
@@ -1033,14 +1034,15 @@ header a {
     background-color: #2eb353;
 }
 
-#newCommentForm textarea {
+#newCommentForm textarea,
+#newCommentForm input {
     max-width: 100%;
     min-width: 100%;
     height: 10rem;
     width: 100%;
     outline: none;
     font-size: .9em;
-    margin: 10px 0 15px;
+    margin-bottom: 1rem;
     padding: 12px;
     border-radius: 3px;
     background-color: rgb(247, 247, 247);
@@ -1048,16 +1050,32 @@ header a {
     line-height: 20px;
 }
 
-#newCommentForm textarea:focus {
+#newCommentForm textarea:focus,
+#newCommentForm input:focus {
     background-color: rgba(255, 255, 255, 1);
     box-shadow: inset 2px 2px #50c8ff, inset -2px -2px #0095da;
 }
 
-#newCommentForm textarea:hover {
+#newCommentForm textarea:hover,
+#newCommentForm input:hover {
     background-color: rgb(247, 247, 247);
     box-shadow: inset 2px 2px #50c8ff, inset -2px -2px #0095da;
 }
 
+#newCommentForm img {
+    height: 4rem;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+#newCommentForm label {
+    margin-bottom: 1rem;
+    color: #540008;
+}
+
+#newCommentForm input {
+    height: 38px;
+}
 
 
 
