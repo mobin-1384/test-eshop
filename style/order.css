@@ -1019,7 +1019,8 @@ header a {
     padding-top: 0;
 }
 
-#newCommentForm button {
+#newCommentForm button,
+.commentFooter div {
     border: none;
     outline: none;
     background-color: #38ca62;
@@ -1029,7 +1030,8 @@ header a {
     margin: 0.3rem auto;
 }
 
-#newCommentForm button:hover {
+#newCommentForm button:hover,
+.commentFooter div:hover {
     cursor: pointer;
     background-color: #2eb353;
 }
@@ -1089,19 +1091,39 @@ header a {
     background-color: #fff;
     margin: 1rem 0;
     font-size: .9rem;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .commentHeader {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+    padding: 0 1rem;
 }
 
 .commentHeader p:last-child {
     font-size: .8rem;
     margin-top: .5rem;
     color: rgba(0, 0, 0, .7);
+}
+
+.commentText {
+    color: rgba(0, 0, 0, .8);
+    font-size: .85rem;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+
+.commentFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.commentFooter div {
+    margin: 0;
+    font-size: .8rem;
+    padding: .5rem 1rem;
 }
 
 
