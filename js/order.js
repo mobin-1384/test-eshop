@@ -168,7 +168,7 @@ function newComment(elem) {
     elem.children[0].children[2].classList.remove("BtnDeActive");
     elem.removeAttribute("onclick");
     document.querySelector("#newCommentForm").style.display = "flex";
-    elem.children[0].children[0].innerHTML = "نظر خود را بنویسید !"
+    elem.children[0].children[0].innerHTML = "نظر خود را بنویسید !";
     elem.classList.remove("newCommentHover");
 }
 
@@ -181,4 +181,12 @@ function closeNewComment(elem) {
         elem.parentElement.parentElement.classList.add("newCommentHover");
     }, 10);
     elem.previousElementSibling.previousElementSibling.innerHTML = "ثبت نظر جدید";
+}
+
+function newReply() {
+    var newCommentTag = document.querySelector(".newComment");
+    newComment(newCommentTag);
+    newCommentTag.children[0].children[0].innerHTML = "پاسخ خود را بنویسید !";
+    document.querySelector(".CommentItem").scrollIntoView();
+    document.querySelector("#cmtText").focus();
 }

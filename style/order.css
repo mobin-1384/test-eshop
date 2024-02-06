@@ -1060,7 +1060,7 @@ header a {
 
 #newCommentForm textarea:hover,
 #newCommentForm input:hover {
-    background-color: rgb(247, 247, 247);
+    background-color: rgba(255, 255, 255, 1);
     box-shadow: inset 2px 2px #50c8ff, inset -2px -2px #0095da;
 }
 
