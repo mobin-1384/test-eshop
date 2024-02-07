@@ -1105,6 +1105,7 @@ header a {
     font-size: .8rem;
     margin-top: .5rem;
     color: rgba(0, 0, 0, .7);
+    line-height: 25px;
 }
 
 .commentText {
@@ -1129,10 +1130,29 @@ header a {
 .commentReply {
     width: 85%;
     margin-right: auto;
+    position: relative;
 }
 
 .commentReply .commentText {
     margin-bottom: 0;
+}
+
+ .replyLine {
+    width: 2px;
+    height: 10rem;
+    position: absolute;
+    background-color: #e3e3e3;
+    right: -10%;
+    top: -13%;
+}
+
+.replyLine2 {
+    width: 1.9rem;
+    height: 2px;
+    position: absolute;
+    background-color: #e3e3e3;
+    right: -10%;
+    top: 50%;
 }
 
 

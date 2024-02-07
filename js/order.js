@@ -190,3 +190,21 @@ function newReply() {
     document.querySelector(".CommentItem").scrollIntoView();
     document.querySelector("#cmtText").focus();
 }
+
+if (document.querySelector(".replyLine") != null) {
+    var replyLine = document.querySelectorAll(".replyLine");
+    for (let i = 0; i < replyLine.length; i++) {
+        var lastElem = replyLine[i].parentElement.previousElementSibling.children[0];
+        var divHeight = replyLine[i].parentElement.clientHeight;
+
+        if (lastElem.classList[0] == "replyLine") {
+            lastElemHeight = lastElem.parentElement.clientHeight + 1.56;
+            console.log(lastElemHeight / 2);
+            replyLine[i].style.height = `${(lastElemHeight / 2) + (divHeight / 2) + 19}px`;
+            replyLine[i].style.top = `-${(lastElemHeight / 2) + 17}px`;
+        } else {
+            replyLine[i].style.height = `${(divHeight / 2) + 19.56}px`;
+            replyLine[i].style.top = "-18px";
+        }
+    }
+}
