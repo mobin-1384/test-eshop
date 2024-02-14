@@ -1145,7 +1145,7 @@ header a {
     height: 10rem;
     position: absolute;
     /* background-color: #e3e3e3; */
-    background-color: #f3f3f3;
+    background-color: #efefef;
     right: -10%;
     top: -13%;
 }
@@ -1154,7 +1154,7 @@ header a {
     width: 10%;
     height: 2px;
     position: absolute;
-    background-color: #f3f3f3;
+    background-color: #efefef;
     right: -10%;
     top: 50%;
 }
