@@ -131,13 +131,13 @@ bestRelated.owlCarousel({
             items: 3,
         },
         1024: {
-            items: 4,
+            items: 3,
         },
         1280: {
-            items: 5,
+            items: 3,
         },
         1500: {
-            items: 6,
+            items: 3,
         }
     },
 });
@@ -199,8 +199,7 @@ if (document.querySelector(".replyLine") != null) {
 
         if (lastElem.classList[0] == "replyLine") {
             lastElemHeight = lastElem.parentElement.clientHeight + 1.56;
-            console.log(lastElemHeight / 2);
-            replyLine[i].style.height = `${(lastElemHeight / 2) + (divHeight / 2) + 19}px`;
+            replyLine[i].style.height = `${(lastElemHeight / 2) + (divHeight / 2) + 18}px`;
             replyLine[i].style.top = `-${(lastElemHeight / 2) + 17}px`;
         } else {
             replyLine[i].style.height = `${(divHeight / 2) + 17.56}px`;

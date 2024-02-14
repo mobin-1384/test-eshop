@@ -1159,8 +1159,6 @@ header a {
 
 
 
-
-
 @media screen and (max-width:410px) {
     .best-item a:nth-child(2) i {
         padding-left: .2rem;
@@ -1183,7 +1181,7 @@ header a {
 }
 
 @media screen and (min-width:500px) {
-    section:not(.PDSection) {
+    section:not(.PDSection, .catParent) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1272,6 +1270,27 @@ header a {
         width: 720px;
         border-right: 1px solid rgba(0, 0, 0, .1);
         border-left: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    .PDSection {
+        width: 800px;
+        margin: 0 auto;
+        border-right: 1px solid rgba(0, 0, 0, .05);
+        border-left: 1px solid rgba(0, 0, 0, .05);
+    }
+
+    .pDetailFooter {
+        width: 800px !important;
+        margin: 0 calc((100% - 800px) / 2);
+        border-right: 1px solid rgba(0, 0, 0, .05);
+        border-left: 1px solid rgba(0, 0, 0, .05);
+    }
+
+    .productDetailHeader {
+        width: 800px;
+        margin: 0 auto;
+        border-right: 1px solid rgba(0, 0, 0, .05);
+        border-left: 1px solid rgba(0, 0, 0, .05);
     }
 }
 
