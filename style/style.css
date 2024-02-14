@@ -122,6 +122,11 @@ a {
     border: 1px solid #0000001f;
     border-radius: 30px;
     padding: .2rem;
+    transition: 100ms ease-in-out;
+}
+
+.category-item div:hover {
+    transform: scale(1.05);
 }
 
 .category-item div img {
