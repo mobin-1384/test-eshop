@@ -1147,7 +1147,7 @@ header a {
 }
 
 .replyLine2 {
-    width: 1.9rem;
+    width: 10%;
     height: 2px;
     position: absolute;
     background-color: #e3e3e3;
