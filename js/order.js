@@ -204,7 +204,7 @@ if (document.querySelector(".replyLine") != null) {
             replyLine[i].style.top = `-${(lastElemHeight / 2) + 17}px`;
         } else {
             replyLine[i].style.height = `${(divHeight / 2) + 19.56}px`;
-            replyLine[i].style.top = "-18px";
+            replyLine[i].style.top = "-17px";
         }
     }
 }
