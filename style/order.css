@@ -508,11 +508,19 @@ header a {
     justify-content: space-between;
     height: 257px;
     margin: 0 .5rem 1rem;
+    transition: all 0.2s ease;
 }
 
 .catItem:hover {
     cursor: pointer;
-    background-color: #f9fafd;
+    /* background-color: #f9fafd; */
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 0 7px 0 #eaeff4;
+    -moz-box-shadow: 0 0 7px 0 #eaeff4;
+    -webkit-box-shadow: 0 0 7px 0 #eaeff4;
+    transform: scale(1.01);
 }
 
 .catItem:nth-child(2n - 1) {
