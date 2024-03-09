@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../style/owl.carousel.css">
     <link rel="stylesheet" href="../style/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <link rel="stylesheet" href="http://cdn.font-store.ir/yekan.css" type="text/css">
     <link rel="stylesheet" href="../style/style.css">
     <!-- OUT OF OTHER -->
     <link rel="stylesheet" href="../style/order.css">
@@ -26,6 +25,25 @@
 <body>
     <header class="searchHeader">
         <div class="searchHead">
+            <a href="../index.html" id="searchBack">
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a id="searchClean" onclick="cleanSerchBox(this)">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </a>
+            <div>
+                <form action="">
+                    <div>
+                        <input type="text" name="search" placeholder="جستجو" id="searchInp" required="" onkeyup="searchBox(this)">
+                    </div>
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- <div class="searchHead">
             <a href="../index.html">
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
@@ -35,7 +53,7 @@
             <div onclick="cleanSerchBox(this)" id="cleanSerchBox">
                 <i class="fa-regular fa-circle-xmark"></i>
             </div>
-        </div>
+        </div> -->
     </header>
 
     <section class="searchSection">

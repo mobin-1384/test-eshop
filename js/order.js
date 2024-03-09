@@ -20,24 +20,48 @@ function addToCart(elem) {
     Alert(5000, "success", text);
 }
 
+// ============ CATEGORY ============
+
+var catSearch = document.querySelectorAll('.catHeader')[0];
+var catSection = document.querySelectorAll('.catParent')[0];
+if (catSearch != null && catSection != null) {
+    var catSearchHeight = catSearch.clientHeight;
+    var catSectionHeight = catSection.clientHeight;
+    var totalHeightBody = catSectionHeight + catSearchHeight + 64;
+    if (window.innerHeight > totalHeightBody) {
+        var catBody = document.querySelectorAll(".catBody")[0];
+        catBody.style.height = `${window.innerHeight}px`;
+    } else {
+        var catBody = document.querySelectorAll(".catBody")[0];
+        catBody.style.height = `${totalHeightBody}px`;
+    }
+
+}
+
 // ============= SEARCH PAGE ============
 
 // var searchInp = document.querySelector("#searchInp");
 // searchInp.addEventListener("keydown", function(){
 //     console.log(searchInp.value);
+//     setInterval(() => {
+        
+//     }, interval);
 // })
 
 function searchBox(elem) {
     if (elem.value != "") {
-        document.querySelector("#cleanSerchBox").style.display = "block";
+        document.querySelector("#searchBack").style.display = "none";
+        document.querySelector("#searchClean").style.display = "block";
     } else {
-        document.querySelector("#cleanSerchBox").style.display = "none";
+        document.querySelector("#searchClean").style.display = "none";
+        document.querySelector("#searchBack").style.display = "block";
     }
 }
 
 function cleanSerchBox(elem) {
     document.querySelector("#searchInp").value = "";
     elem.style.display = "none";
+    document.querySelector("#searchBack").style.display = "block";
 }
 
 // ============= PRODUCTS ============

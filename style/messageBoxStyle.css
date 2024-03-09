@@ -1,0 +1,36 @@
+.alertMessageBox {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+.alertMessageBlue {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+.alertMessageGreen {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+.alertMessageRed {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.alertMessageYellow {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+.alertMessageCyan {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}

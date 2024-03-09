@@ -293,6 +293,7 @@ header a {
     font-size: .9rem;
     padding: 1rem 1.5rem;
     line-height: 25px;
+    text-align: center;
 }
 
 .Item--price {
@@ -300,7 +301,7 @@ header a {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 .Item--price span {
@@ -385,8 +386,8 @@ header a {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid #19bfd3;
-    padding: 1rem 0 .4rem;
     margin: 0 1.2rem;
+    padding: 1rem 0 !important;
     align-items: center;
     justify-content: flex-start;
 }
@@ -399,9 +400,15 @@ header a {
     caret-color: #19bfd3;
 }
 
-.searchHead>div,
+.searchHead>div {
+    flex-basis: 95%;
+    display: flex;
+    flex-direction: row;
+    padding-right: .5rem;
+}
+
 .searchHead>a {
-    flex-basis: 7.5%;
+    flex-basis: 5%;
 }
 
 .searchHead>a {
@@ -412,15 +419,6 @@ header a {
     cursor: pointer;
 }
 
-.searchHead>div:nth-child(2) {
-    flex-basis: 85%;
-}
-
-.searchHead>div:last-child {
-    direction: ltr;
-    display: none;
-}
-
 #searchInp:focus {
     border: none !important;
     outline: none;
@@ -429,6 +427,39 @@ header a {
 .searchHead i {
     font-size: 1.2rem;
     color: rgba(0, 0, 0, .7);
+}
+
+.searchHead form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.searchHead form>div {
+    flex-basis: 95%;
+}
+
+.searchHead form>button {
+    flex-basis: 5%;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0.5rem 0.7rem;
+}
+
+.searchHead form>button>i {
+    color: rgba(0, 0, 0, .7);
+    font-size: 1rem;
+}
+
+.searchHead form>button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 174, 255, 0.5);
+}
+
+.searchHead form>button:hover i {
+    color: #fff;
 }
 
 .searchSectionDiv {
@@ -470,6 +501,19 @@ header a {
 .searchResP {
     width: 85%;
     line-height: 25px;
+}
+
+#searchClean {
+    display: none;
+}
+
+#searchClean>i {
+    color: #dc3545;
+}
+
+#searchClean:hover>i {
+    color: rgb(255, 92, 92);
+    cursor: pointer;
 }
 
 /* ===========CATEGORY PAGE============= */
@@ -532,11 +576,16 @@ header a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .catImg img {
-    width: 100px;
+    width: 90px;
     object-fit: contain;
+}
+
+.catItem:last-child .catImg img {
+    width: 70px;
 }
 
 .catTitle h3 {
@@ -1158,9 +1207,6 @@ header a {
     right: -10%;
     top: 50%;
 }
-
-
-
 
 
 @media screen and (max-width:410px) {
