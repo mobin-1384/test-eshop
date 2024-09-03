@@ -1027,12 +1027,19 @@ header a {
 }
 
 .newComment {
-    border: 1px solid #00BCD4;
+    /*border: 1px solid #00BCD4;*/
     width: 100%;
     border-radius: 5px;
     font-size: .9rem;
     display: flex;
     flex-direction: column;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 7px 0 #eaeff4;
+    -moz-box-shadow: 0 0 7px 0 #eaeff4;
+    -webkit-box-shadow: 0 0 7px 0 #eaeff4;
+    position: relative;
+    border: 1px solid #ecf0f4;
 }
 
 .newComment>div {
