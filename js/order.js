@@ -212,6 +212,7 @@ function newReply() {
     newComment(newCommentTag);
     newCommentTag.children[0].children[0].innerHTML = "پاسخ خود را بنویسید !";
     document.querySelector(".CommentItem").scrollIntoView();
+    window.scrollBy(0, -100);
     document.querySelector("#cmtText").focus();
 }
 
