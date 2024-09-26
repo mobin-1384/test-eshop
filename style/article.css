@@ -7,7 +7,6 @@ body {
 
 .al-items {
     width: 100%;
-    padding: 0 1rem;
     display: flex;
     flex-direction: column;
 }
@@ -16,8 +15,12 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 1rem 0;
+    padding: 1rem;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.al-item:hover {
+    background-color: rgba(0, 255, 255, 0.04);
 }
 
 .al-right {
@@ -25,6 +28,7 @@ body {
     flex-direction: column;
     flex-basis: 70%;
     padding: 0 1rem;
+    justify-content: space-between;
 }
 
 .al-left {
@@ -79,4 +83,69 @@ body {
     -webkit-box-shadow: 0 0 7px 0 #eaeff4;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.article-poster img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.article-text {
+    padding: 1rem;
+}
+
+.article-text > h3 {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, .8);
+    line-height: 30px;
+}
+
+.article-icons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, .8);
+    font-size: .9rem;
+    padding: 1rem;
+}
+
+.article-icons div,
+.article-writer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.article-icons i,
+.article-writer i {
+    margin-left: .3rem;
+}
+
+.article-writer {
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+
+.article-text-box {
+    padding: 1rem 0 0;
+    line-height: 30px;
+}
+
+
+
+@media screen and (min-width:720px) {
+    .article-list-header {
+        width: 720px;
+        margin: 1rem auto .7rem;
+    }
+
+    .article-list-section {
+        width: 720px;
+        margin: 1rem auto;
+        border: 1px solid #ecf0f4;
+        box-shadow: 0 0 7px 0 #eaeff4;
+        -webkit-box-shadow: 0 0 7px 0 #eaeff4;
+        border-radius: 10px;
+        overflow: hidden;
+    }
 }
