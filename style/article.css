@@ -130,6 +130,7 @@ body {
 .article-text-box img {
     width: 100%;
     margin: 1rem 0 .5rem;
+    display: block;
 }
 
 .article-text-box a {
@@ -139,6 +140,15 @@ body {
 .article-text-box a:hover {
     text-decoration: underline;
     text-underline-offset: 8px;
+}
+
+.article-img-caption {
+    display: block;
+    width: 100%;
+    color: #a1a3a8;
+    font-size: .9rem;
+    line-height: 25px;
+    margin-bottom: .4rem;
 }
 
 @media screen and (min-width:600px) {
