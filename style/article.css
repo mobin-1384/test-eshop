@@ -97,7 +97,7 @@ body {
 .article-text > h3 {
     font-size: 1.1rem;
     color: rgba(0, 0, 0, .8);
-    line-height: 30px;
+    line-height: 35px;
     padding: 1.2rem 0 .5rem;
 }
 
@@ -127,6 +127,26 @@ body {
     line-height: 35px;
 }
 
+.article-text-box img {
+    width: 100%;
+    margin: 1rem 0 .5rem;
+}
+
+.article-text-box a {
+    color: hotpink;
+}
+
+.article-text-box a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+@media screen and (min-width:600px) {
+    .articleSection {
+        width: 600px;
+        margin: 1rem auto;
+    }
+}
 
 
 @media screen and (min-width:720px) {
@@ -135,7 +155,8 @@ body {
         margin: 1rem auto .7rem;
     }
 
-    .article-list-section {
+    .article-list-section,
+    .articleSection {
         width: 720px;
         margin: 1rem auto;
         border: 1px solid #ecf0f4;
